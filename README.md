@@ -1,12 +1,10 @@
 # How to Publish Open Data
 
-A guide for governments looking to publish open data.
-
-[See Philadephia's guide](https://docs.google.com/document/d/1Kd4AOoRG8q18PVZ0JMusgKWJmgjrWvv3iTdKUjLEdT4/edit).
+A practical guide to opening data, for government employees whose job it is to make that happen.
 
 ## To Do
 * create a generic guide, which is to say that it doesn't provide information that's specific to any type of agency
- * both link to and incorporate materials (where licensing permits) from [5 ★ Open Data](http://5stardata.info/), [Simple Open Data](http://simpleopendata.com/)
+ * both link to and incorporate materials (where licensing permits) from [5 ★ Open Data](http://5stardata.info/), [Simple Open Data](http://simpleopendata.com/), and [Philadephia's guide](https://docs.google.com/document/d/1Kd4AOoRG8q18PVZ0JMusgKWJmgjrWvv3iTdKUjLEdT4/edit)
 * create guides per agency
   * provide links to relevant software
   * document frequently used records management software within that type of agency
