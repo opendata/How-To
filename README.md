@@ -10,7 +10,7 @@ A practical guide to opening data, for government employees whose job it is to m
   * document frequently used records management software within that type of agency
   * list datasets that they should publish
     * look at the OKFN open data census to compare datasets
-* explain all common data formats, with links to software for conversion to other formats
+* explain all common data formats, with links to software for conversion to other formats, and with a 5-star rating
  * PDF: really just fine for text, although maybe publish the original files (e.g., Word) alongside it, but not at all good for spreadsheets etc.
  * Word: really just fine for text, although Markdown, HTML, or RTF would be better
  * XML: very detailed, but complicated—classic example of an open format
