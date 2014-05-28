@@ -4,7 +4,9 @@ A guide for governments looking to publish open data.
 
 [See Philadephia's guide](https://docs.google.com/document/d/1Kd4AOoRG8q18PVZ0JMusgKWJmgjrWvv3iTdKUjLEdT4/edit).
 
-* create a generic guide
+## To Do
+* create a generic guide, which is to say that it doesn't provide information that's specific to any type of agency
+ * both link to and incorporate materials (where licensing permits) from [5 ★ Open Data](http://5stardata.info/), [Simple Open Data](http://simpleopendata.com/)
 * create guides per agency
   * provide links to relevant software
   * document frequently used records management software within that type of agency
@@ -20,3 +22,6 @@ A guide for governments looking to publish open data.
  * [and so on]
 * provide a section on licensing
  * include a table of states and their position on the copyright status of government works (see [the Wikipedia entry](http://en.wikipedia.org/wiki/Copyright_status_of_work_by_U.S._subnational_governments) for a head start on this
+ * link to the [Open Government Data licensing page](http://theunitedstates.io/licensing/)
+* provide only a very small section on policy guidelines
+ * this guide is really for the folks in the trenches publishing data, rather than people setting policy, so it's really only necessary to send people to [Sunlight's policy guidelines](http://sunlightfoundation.com/opendataguidelines/)
