@@ -1,4 +1,4 @@
-# How-To
+# How to Publish Open Data
 
 A guide for governments looking to publish open data.
 
