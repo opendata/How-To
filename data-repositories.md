@@ -32,7 +32,7 @@ layout: default
 * clients include...
 * example site
 
-## NuData Enterprise
+## NuData
 
 * based on DKAN
 
