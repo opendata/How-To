@@ -20,16 +20,22 @@ layout: default
 * they’ll hold your hand through the process
 * your organization doesn’t have to provide any technical infrastructure
 
-## Socrata
+## Socrata Open Data Portal
 
+* http://www.socrata.com/products/open-data-portal/
 * most expensive option
 * clients include...
+* [demo site](https://sandbox.demo.socrata.com/)
 * example site
 
 ## Junar
 
+* http://www.junar.com/
 * less expensive than Socrata
 * clients include...
+  * [Sacramento, CA](http://data.cityofsacramento.org/)
+  * [Palo Alto, CA](http://paloalto.opendata.junar.com/)
+  * [Lima, Perú](http://lima.datosabiertos.pe/)
 * example site
 
 ## NuData
