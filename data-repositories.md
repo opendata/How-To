@@ -26,7 +26,6 @@ layout: default
 * most expensive option
 * clients include...
 * [demo site](https://sandbox.demo.socrata.com/)
-* example site
 
 ## Junar
 
@@ -36,7 +35,6 @@ layout: default
   * [Sacramento, CA](http://data.cityofsacramento.org/)
   * [Palo Alto, CA](http://paloalto.opendata.junar.com/)
   * [Lima, Perú](http://lima.datosabiertos.pe/)
-* example site
 
 ## NuData
 
