@@ -10,7 +10,7 @@ This is a brand-new project, it barely has a website, and it's skeletal in its c
 
 ## See Also
 
-* The Open Knowledge Foundation's “[Open Data Handbook](http://opendatahandbook.org/en/)”
+* The Open Knowledge Foundation's “[Open Data Handbook](http://opendatahandbook.org/en/),” which is more technical, covers a broader range of topics, andis not exclusive to government employees, and is not exclusive to the United States.
 
 ## License
 
