@@ -2,10 +2,15 @@
 
 A practical guide to opening data, for government employees whose job it is to make that happen.
 
+
 ## Status
 
 This is a brand-new project, it barely has a website, and it's skeletal in its contents. See [Issues](https://github.com/USODI/How-To/issues) to see what needs to be done.
 
+
+## See Also
+
+* The Open Knowledge Foundation's “[Open Data Handbook](http://opendatahandbook.org/en/)”
 
 ## License
 
