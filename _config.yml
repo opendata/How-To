@@ -1,1 +1,3 @@
 markdown: kramdown
+
+exclude: [".gitignore", "README.md", "_drafts"]
