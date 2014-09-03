@@ -41,5 +41,55 @@ While it is true that the above *works*, it begets the question as to whether it
 
 # Working with PDFs
 
-Despite PDFs distinct disadvantages for publishing data, many public agencies still publish data in PDF formats.
+Despite PDFs distinct disadvantages for publishing data, many public agencies still publish data in PDF formats. The remainder of this page will discuss the various methods for extracting data from published PDFs. There are two major "flavors" of PDF documents: those that have a text layer and those which do not. For working with documents which have a text layer please skip the next section. For working with documents which do not have a text layer please start with the next section. If you are unsure whether the set of PDFs you are seeking to work with has a text layer or does not, try opening the PDF in a PDF viewer and try selecting the text. If you are able to select text with your mouse or keyboard then the PDF does have a text layer, if you are not able to select text with your mouse or keyboard then the PDF does not have a text layer.
+
+As with any data-driven task, one of the most important aspects of extracting data from PDFs is to have a plan for how one will handle the task. The below sections cover some of the different aspects which may be included in the overall plan. Generally speaking, if the document one is working with does not have a text layer then there will be three main steps one must take to derive data from the PDF source:
+
+1. Recognize the text on the document.
+2. Ensure the text layer is "cleaned" of noise.
+3. Process the text into the required data format.
+
+When one is dealing with documents which already have a text layer to them, the first two steps would generally be ignored. The three step process outlined above is general in nature and is meant only to be illustrative. Each data derivation task will require its own plan for how to transform the PDF documents into machine usable data.
+
+# Step 1 -- Recognize the Document's Text
+
+Optical Character Recognition, or OCR, is the task of processing image data and extracting useful text out of the image. It is sort of like machines "reading" a document. In actuality what is happening is that the machine is analyzing the pixels on the screen and matching the boundaries of differences in the pixel colors against patterns which have been preprogrammed into the OCR software.
+
+## Optical Character Recognition -- Background
+
+Digital images, for those who are not aware, are a set of very small squares (also called pixels) which have a specific color. Below is an example of the English language character "e" which has been zoomed in using GIMP (which is a free and open source Photoshop equivalent).
+
+<!-- TODO: add screenshot 1 of "e" here -->
+
+In the image above, viewers are mostly likely able to recognize the pattern of an English language "e" as well as the pixels or squares of colors. In order to simplify the example, we built the image as black text on a white background. However, the viewer can see that some of the pixels are shades of colors in between pure black and pure white. This is what allows fonts to render smooth curves and generally appear "nice" to the human eye.
+
+In the next image, which is the exact same image only with the English language "e" written in a different font, you can see a greater amount of pixels which are neither pure black nor pure white in color.
+
+<!-- TODO: add screenshot 2 of "e" here -->
+
+As the above two images demonstrate, when "looking" at pixels and trying to derive patterns from those pixels there is a great difference in how fonts are rendered as images. This is important because as explained above, what OCR software is attempting to do is to match the pixels of an image against various patterns that the OCR software knows about.
+
+The patterns which a piece of OCR software understands are exceedingly important to the success of the software as they provide the basis which the software is using to match patterns of the image against. There is a process of "training" OCR software which can be used to improve the output of an OCR rendering process. This has been leveraged by the CAPTCHA and ReCPATCHA program to improve the scanning reliability of text (a good place to start if one is interested in learning more about this process is [this TED talk](http://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration)).
+
+OCR software is exceedingly complex for a number of reasons. Differences in how images are taken, differences in fonts and how those are rendered as pixels in a digital image, differences in language patters, and "noise" within the image all contribute to the challenges which OCR software developers face. For this reason, perhaps among others, the state of free and open source OCR software is not currently optimal. [Here is a Wikipedia comparison of OCR software](http://en.wikipedia.org/wiki/Comparison_of_optical_character_recognition_software).  Although it is only one test, this blog post is a demonstrator of [the differences in OCR software](http://www.splitbrain.org/blog/2010-06/15-linux_ocr_software_comparison).
+
+## Optical Character Recognition -- Top Tips
+
+Working with OCR software can be a challenge, but it is often more efficient than typing large amounts of pages. As stated above, there are numerous variables which contribute to the success of an OCR rendering process. There are two main variables which users can control to optimize the process: the "noise" on the page which a OCR software is forced to analyze, and the "area" of the page which the OCR software is forced to analyze.
+
+Noise to an OCR rendering process is pixels on the digital image which render closer to the text color than to the background color but which are not actually text. An example of this is when there is a dot on a page (perhaps from a pen marking or any other process) which then the OCR software renders as a backtick ("`"). Noise also works in the reverse, pixels which are closer to the background color than to the text color but actually should be rendering as text. An example of this is when there may be a lighter few pixels in the midst of an "l" character so that the OCR software will "think" that the closest pattern is actually an "i" character instead of the "l".
+
+Below are some examples of noise and how that renders after the OCR process.
+
+<!-- TODO: add noise screenshots here -->
+
+**TOP TIP**: *get good scans*. The best way to reduce noise in a digital image is a good scan of the document. Over the past two decades scanner technology has increased dramatically. So if the documents one is working with are older documents, it may be worth the time to rescan the document if it is an old one. However, if the only hard copy of the document which is available is an old photocopy with lots of noise on it, then there is little one can do about such a situation.
+
+**TOP TIP**: *minimize the OCR-ed area*. Minimizing the OCR-ed area is not available with all OCR software. In some OCR software suites, one can select via a graphical user interface, the area which the OCR software will analyze. The benefit of closely matching the area of the image which the OCR software will analyze to that human determined area of text on the page is that it will minimize the amount of noise a bad scan will output, as noise which is not within text blocks will not be analyzed. The screenshots below demonstrate how to do this in one OCR software.
+
+<!-- TODO: add OCR area determination screenshots here -->
+
+## Optical Character Recognition -- Exporting
+
+
 
