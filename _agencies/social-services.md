@@ -1,3 +1,10 @@
+---
+layout: default
+title: Social Services Agencies
+---
+
+{:toc}
+
 * food banks
 * homeless shelters
 * mental health resources

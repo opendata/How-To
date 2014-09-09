@@ -1,1 +1,0 @@
-* permits (applications and granted)
