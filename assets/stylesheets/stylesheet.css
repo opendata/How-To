@@ -337,6 +337,18 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+/* Nav */
+ul.navbar {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+ul.navbar li {
+  list-style: none;
+  float: left;
+}
+
 /* #Media Queries
 ================================================== */
 
