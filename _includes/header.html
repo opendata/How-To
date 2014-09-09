@@ -17,3 +17,23 @@
 <body>
   <div id="container">
     <div class="inner">
+      <header>
+        <h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
+        <h2>{% if page.lede %}{{ page.lede }}{% endif %}</h2>
+      </header>
+
+      {% unless page.homepage %}
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/basics">Basics</a></li>
+          <li><a href="/agencies">Agencies</a></li>
+          <li><a href="/process">Processes</a></li>
+          <li><a href="/foss">Tools</a></li>
+        </ul>
+      </nav>
+
+      <hr />
+      {% endunless %}
+
+      <section id="main_content">
