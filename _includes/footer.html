@@ -1,15 +1,9 @@
         </section>
 
-
-        {% if page.homepage %}
-          <hr />
-
-          <section id="downloads" class="clearfix">
-            <a href="https://github.com/USODI/How-To/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-            <a href="https://github.com/USODI/How-To/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-            <a href="https://github.com/USODI/How-To" id="view-on-github" class="button"><span>View on GitHub</span></a>
-          </section>
-        {% endif %}
+        <hr />
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/opendata/How-To/edit/gh-pages{{ page.url | replace:'.html','.md' | replace:'agencies','_agencies' | replace 'basics', '_basics' | replace 'foss', '_foss' | replace 'processes', '_processes' }}" target="blank" id="view-on-github" class="button"><span>Edit on GitHub</span></a>
+        </section>
 
         <footer>
           How To Publish Open Data is maintained by <a href="https://github.com/USODI">USODI</a>
