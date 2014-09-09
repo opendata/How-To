@@ -15,7 +15,7 @@ layouts:     'assets/layouts'
 includes:    'assets/includes'
 images_dir:  'assets/images'
 scripts_dir: 'assets/javascripts'
-styles_dir:  'assets/stylsheets'
+styles_dir:  'assets/stylesheets'
 
 # Use collections
 collections:
