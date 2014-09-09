@@ -10,7 +10,7 @@ kramdown:
   smart_quotes:  lsquo,rsquo,ldquo,rdquo
 
 # Change slightly where things are
-exclude: [".gitignore", "README.md", "_drafts"]
+exclude:     [".gitignore", "README.md", "_drafts"]
 layouts:     'assets/layouts'
 includes:    'assets/includes'
 images_dir:  'assets/images'
