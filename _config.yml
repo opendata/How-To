@@ -1,3 +1,29 @@
-markdown: kramdown
+# Rendering Defaults
+markdown:    kramdown
+highlighter: pygments
+kramdown:
+  input:         GFM
+  auto_ids:      true
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..3
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
 
+# Change slightly where things are
 exclude: [".gitignore", "README.md", "_drafts"]
+layouts:     'assets/layouts'
+includes:    'assets/includes'
+images_dir:  'assets/images'
+scripts_dir: 'assets/javascripts'
+styles_dir:  'assets/stylsheets'
+
+# Use collections
+collections:
+  agencies:
+    output:    true
+  basics:
+    output:    true
+  foss:
+    output:    true
+  processes:
+    output:    true
