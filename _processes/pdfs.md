@@ -5,7 +5,7 @@ layout: default
 
 {:toc}
 
-# Introduction
+# Introduction to Portable Document Format
 
 The Portable Document Format (or "PDF") is an excellent way to share documents. Documents consistently render across all devices -- from desktop computers to smart televisions -- in the exact manner which the publisher of the document intended. Unfortunately, the advantages which the PDF format gives to publishers of *documents* are mostly the same as the disadvantages which the PDF format gives to publishers of *data*.
 
@@ -49,7 +49,9 @@ One such inexpensive and non-proprietary method of ensuring the authenticity of 
 
 # Working with PDFs
 
-Despite PDFs distinct disadvantages for publishing data, many public agencies still publish data in PDF formats. The remainder of this page will discuss the various methods for extracting data from published PDFs. There are two major "flavors" of PDF documents: those that have a text layer and those which do not. For working with documents which have a text layer please skip the next section. For working with documents which do not have a text layer please start with the next section. If you are unsure whether the set of PDFs you are seeking to work with has a text layer or does not, try opening the PDF in a PDF viewer and try selecting the text. If you are able to select text with your mouse or keyboard then the PDF does have a text layer, if you are not able to select text with your mouse or keyboard then the PDF does not have a text layer.
+Despite the distinct disadvantages which PDFs have as a format for publishing data, many public agencies still publish data in PDF formats. The remainder of this page will discuss the various methods for extracting data from published PDFs.
+
+There are two major "flavors" of PDF documents: those that have a text layer and those which do not. If you are unsure whether the set of PDFs you are seeking to work with has a text layer or does not, try opening the PDF in a PDF viewer and selecting the text with your mouse or keyboard. If you are able to select text with your mouse or keyboard then the PDF *does have a text layer*, if you are not able to select text with your mouse or keyboard or if you can only select an entire page then the PDF *does not have a text layer*.
 
 As with any data-driven task, one of the most important aspects of extracting data from PDFs is to have a plan for how one will handle the task. The below sections cover some of the different aspects which may be included in the overall plan. Generally speaking, if the document one is working with does not have a text layer then there will be three main steps one must take to derive data from the PDF source:
 
@@ -59,15 +61,15 @@ As with any data-driven task, one of the most important aspects of extracting da
 
 When one is dealing with documents which already have a text layer to them, the first two steps would generally be ignored. The three step process outlined above is general in nature and is meant only to be illustrative. Each data derivation task will require its own plan for how to transform the PDF documents into machine usable data.
 
-# Step 1 -- Recognize the Document's Text
+## Step 1 -- Recognize the Document's Text
 
 Optical Character Recognition, or OCR, is the task of processing image data and extracting useful text out of the image. It is sort of like machines "reading" a document. In actuality what is happening is that the machine is analyzing the pixels on the screen and matching the boundaries of differences in the pixel colors against patterns which have been preprogrammed into the OCR software.
 
-## Optical Character Recognition -- Background
+### Optical Character Recognition -- Background
 
 Digital images, for those who are not aware, are a set of very small squares (also called pixels) which have a specific color. Below is an example of the English language character "e" which has been zoomed in using GIMP (which is a free and open source Photoshop equivalent).
 
-<!-- TODO: add screenshot 1 of "e" here -->
+![pixelated letter e]({{site.images_dir}}/letter-e.png)
 
 In the image above, viewers are mostly likely able to recognize the pattern of an English language "e" as well as the pixels or squares of colors. In order to simplify the example, we built the image as black text on a white background. However, the viewer can see that some of the pixels are shades of colors in between pure black and pure white. This is what allows fonts to render smooth curves and generally appear "nice" to the human eye.
 
@@ -81,7 +83,7 @@ The patterns which a piece of OCR software understands are exceedingly important
 
 OCR software is exceedingly complex for a number of reasons. Differences in how images are taken, differences in fonts and how those are rendered as pixels in a digital image, differences in language patters, and "noise" within the image all contribute to the challenges which OCR software developers face. For this reason, perhaps among others, the state of free and open source OCR software is not currently optimal. [Here is a Wikipedia comparison of OCR software](http://en.wikipedia.org/wiki/Comparison_of_optical_character_recognition_software).  Although it is only one test, this blog post is a demonstrator of [the differences in OCR software](http://www.splitbrain.org/blog/2010-06/15-linux_ocr_software_comparison).
 
-## Optical Character Recognition -- Top Tips
+### Optical Character Recognition -- Top Tips
 
 Working with OCR software can be a challenge, but it is often more efficient than typing large amounts of pages. As stated above, there are numerous variables which contribute to the success of an OCR rendering process. There are two main variables which users can control to optimize the process: the "noise" on the page which a OCR software is forced to analyze, and the "area" of the page which the OCR software is forced to analyze.
 
@@ -97,22 +99,26 @@ Below are some examples of noise and how that renders after the OCR process.
 
 <!-- TODO: add OCR area determination screenshots here -->
 
-## Optical Character Recognition -- Exporting
+### Optical Character Recognition -- Exporting
 
 Many OCR software suites are capable of exporting to different formats. The Wikipedia article linked to above comparing OCR software suites has a column for exporting formats. This is important mostly because how one approaches the general Step 2 of cleaning the noise from the text will depend on the type of data and how one is attempting to approach cleaning the noise from the text.
 
-# Step 2 -- Clean the Text Layer
+## Step 2 -- Clean the Text Layer
 
 In general the second step in processing PDF documents into machine usable data is to clean the text which has been recognized by the OCR software. This step can be a grind because in general it requires human judgment to determine what is noise and what is not. Human judgment need not *always* be required, there are methods for machine cleaning of OCR analyzed documents which shall be covered below; however, human judgment is currently the safest method of analyzing documents. There is a middle ground between manual (human) cleaning and automatic (machine) cleaning of the text layer which is to perform an initial sweep of the text layer manually and then finalize the cleaning process via an automated process.
 
-## Manual Cleaning of the Text Layer
+### Manual Cleaning of the Text Layer
 
 The goal of this step is to get the text layer into a state where the machines can then churn through the text layer and turn it into a usable format. As stated above, manual cleaning, while slow, is currently the safest way to process data derived from PDF documents. One must be forewarned, this is slow and arduous work. There is a reason why people call this work, "the depths of the OCR mines" or "eyeball bleeding work". However, at times it is necessary.
 
 When manually cleaning the text rendered by OCR software, the strategy one adopts will usually depend on the type of document being analyzed. If one is parsing a document which contains tabular data, then a spreadsheet may be the most relevant piece of software to utilize for the cleaning step. If one is parsing a document which contains text blocks, then a good text editor with regular expression support is likely to be the most relevant piece of software to utilize for the cleaning step. In general, word processors are usually not useful to clean data driven documents because word processors generally add another layer of complexity to the overall file structure, do not handle text documents with ease, and generally do not have regular expression support.
 
-## Automatic Cleaning of the Text Layer
+### Automatic Cleaning of the Text Layer
 
 In order to use computers to clean the text layer of a document which has been analyzed by OCR software you must first have an understanding of what the "signal" and "noise" once the OCR process has ended. This requires, at a minimum, opening the output of the OCR process and skimming through a good portion of the document to see what has been outputted.
 
 Usually the best way to perform an automatic cleaning of the text layer is to build a script in the scripting language which you are most familiar with to purge the document of unwanted characters. The script which one builds will likely rely heavily upon regular expressions. Regular expressions, for those unfamiliar with that term, are a powerful method of matching characters in a block of text against various patterns. One book which is commonly referred to as the "bible" of regular expressions is Mastering Regular Expressions by Jeff Friedl, however there are many books on this subject. If one is in a job which requires a significant amount of OCR or PDF processing work, it may be beneficial to have a keen understanding of regular expressions.
+
+## Step 3 -- Process the Text Into the Required Data Format
+
+This step is outside the scope of this page as once the data is processed into usable text, then it is a simple matter of transforming the text into the required format.
