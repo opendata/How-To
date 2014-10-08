@@ -11,6 +11,7 @@ kramdown:
 
 # Change slightly where things are
 exclude:     [".gitignore", "README.md", "_drafts"]
+url:         "http://how-to.usodi.org"
 layouts:     'assets/layouts'
 includes:    'assets/includes'
 images_dir:  'assets/images'
