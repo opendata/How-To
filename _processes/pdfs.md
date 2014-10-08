@@ -69,7 +69,7 @@ Optical Character Recognition, or OCR, is the task of processing image data and 
 
 Digital images, for those who are not aware, are a set of very small squares (also called pixels) which have a specific color. Below is an example of the English language character "e" which has been zoomed in using GIMP (which is a free and open source Photoshop equivalent).
 
-![pixelated letter e]({{ site.url }}/{{ site.images_dir }}/letter-e.png)
+![pixelated letter e](/{{ site.images_dir }}/pdf/letter-e.png)
 
 In the image above, viewers are mostly likely able to recognize the pattern of an English language "e" as well as the pixels or squares of colors. In order to simplify the example, we built the image as black text on a white background. However, the viewer can see that some of the pixels are shades of colors in between pure black and pure white. This is what allows fonts to render smooth curves and generally appear "nice" to the human eye.
 
