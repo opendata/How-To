@@ -67,37 +67,59 @@ Optical Character Recognition, or OCR, is the task of processing image data and 
 
 ### Optical Character Recognition -- Background
 
-Digital images, for those who are not aware, are a set of very small squares (also called pixels) which have a specific color. Below is an example of the English language character "e" which has been zoomed in using GIMP (which is a free and open source Photoshop equivalent).
+Digital images, for those who are not aware, are a set of very small squares (also called pixels) which have a specific color. Below is an example of the English language character "e" which has been zoomed in using GIMP.
 
 ![pixelated letter e](/{{ site.images_dir }}/pdf/letter-e.png)
 
-In the image above, viewers are mostly likely able to recognize the pattern of an English language "e" as well as the pixels or squares of colors. In order to simplify the example, we built the image as black text on a white background. However, the viewer can see that some of the pixels are shades of colors in between pure black and pure white. This is what allows fonts to render smooth curves and generally appear "nice" to the human eye.
+In the image above, viewers are mostly likely able to recognize the pattern of an English language "e" as well as the pixels (or squares) of colors. In order to simplify the example, we built the image as black text on a white background. However, the viewer can see that some of the pixels are shades of colors in between pure black and pure white. This is what allows fonts to render smooth curves and generally appear "nice" to the human eye.
 
 In the next image, which is the exact same image only with the English language "e" written in a different font, you can see a greater amount of pixels which are neither pure black nor pure white in color.
 
-<!-- TODO: add screenshot 2 of "e" here -->
+![pixelated letter e](/{{ site.images_dir }}/pdf/letter-e-redux.png)
 
-As the above two images demonstrate, when "looking" at pixels and trying to derive patterns from those pixels there is a great difference in how fonts are rendered as images. This is important because as explained above, what OCR software is attempting to do is to match the pixels of an image against various patterns that the OCR software knows about.
+As the above two images demonstrate, when "looking" at pixels and trying to derive patterns from those pixels there is a great difference in how fonts are rendered as images. This is important because as explained above, what an OCR program is attempting to do is to match the pixels of an image against various patterns that the OCR software knows about.
 
-The patterns which a piece of OCR software understands are exceedingly important to the success of the software as they provide the basis which the software is using to match patterns of the image against. There is a process of "training" OCR software which can be used to improve the output of an OCR rendering process. This has been leveraged by the CAPTCHA and ReCPATCHA program to improve the scanning reliability of text (a good place to start if one is interested in learning more about this process is [this TED talk](http://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration)).
+The patterns which a piece of OCR software understands are exceedingly important to the success of the software as they provide the basis which the software is using to match patterns of the image against. There is a process of "training" OCR software which can be used to improve the output of an OCR rendering process. This training process has been leveraged by the CAPTCHA and ReCPATCHA program to improve the scanning reliability of text while also providing the main function these were designed for -- proving that the node entering data into a form is actually a human and not a robot. A good place to start if one is interested in learning more about this process is [this TED talk](http://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration).
 
-OCR software is exceedingly complex for a number of reasons. Differences in how images are taken, differences in fonts and how those are rendered as pixels in a digital image, differences in language patters, and "noise" within the image all contribute to the challenges which OCR software developers face. For this reason, perhaps among others, the state of free and open source OCR software is not currently optimal. [Here is a Wikipedia comparison of OCR software](http://en.wikipedia.org/wiki/Comparison_of_optical_character_recognition_software).  Although it is only one test, this blog post is a demonstrator of [the differences in OCR software](http://www.splitbrain.org/blog/2010-06/15-linux_ocr_software_comparison).
+OCR software is exceedingly complex for a number of reasons. Differences in how images are taken, differences in fonts and how those are rendered as pixels in a digital image, differences in language patterns, and "noise" within the image all contribute to the challenges which OCR software developers face.
+
+For this reason, perhaps among others, the state of free and open source OCR software is not currently optimal. [Here is a Wikipedia comparison of OCR software](http://en.wikipedia.org/wiki/Comparison_of_optical_character_recognition_software).  Although it is only one test, this blog post is a demonstrator of [the differences in OCR software](http://www.splitbrain.org/blog/2010-06/15-linux_ocr_software_comparison). At this time, proprietary OCR software drastically outperforms free and open source OCR software and as such could be worth a public agency's investment depending on the amount and type of OCR jobs the public agency is needing to perform.
 
 ### Optical Character Recognition -- Top Tips
 
-Working with OCR software can be a challenge, but it is often more efficient than typing large amounts of pages. As stated above, there are numerous variables which contribute to the success of an OCR rendering process. There are two main variables which users can control to optimize the process: the "noise" on the page which a OCR software is forced to analyze, and the "area" of the page which the OCR software is forced to analyze.
+Working with OCR software can be a challenge, but it is often more efficient than typing large amounts of pages. As stated above, there are numerous variables which contribute to the success of an OCR rendering process; there are, however, two main variables which users can somewhat control: the "noise" on the page which a OCR software is forced to analyze, and the "area" of the page which the OCR software is forced to analyze.
 
-Noise to an OCR rendering process is pixels on the digital image which render closer to the text color than to the background color but which are not actually text. An example of this is when there is a dot on a page (perhaps from a pen marking or any other process) which then the OCR software renders as a backtick ("`"). Noise also works in the reverse, pixels which are closer to the background color than to the text color but actually should be rendering as text. An example of this is when there may be a lighter few pixels in the midst of an "l" character so that the OCR software will "think" that the closest pattern is actually an "i" character instead of the "l".
+Noise to an OCR rendering process is pixels on the digital image which render closer to the text color than to the background color but which are not actually text. An example of this is when there is a dot on a page (perhaps from a pen marking or any other process) which then the OCR software may render as a backtick ("`").
+
+Noise also works in the reverse, pixels which are closer to the background color than to the text color but actually should be rendering as text. An example of this is when there may be a lighter few pixels in the midst of an "l" character so that the OCR software will "think" that the closest pattern is actually an "i" character instead of the "l".
 
 Below are some examples of noise and how that renders after the OCR process.
 
-<!-- TODO: add noise screenshots here -->
+![noise example 1](/{{ site.images_dir }}/pdf/noise1.png)
 
-**TOP TIP**: *get good scans*. The best way to reduce noise in a digital image is a good scan of the document. Over the past two decades scanner technology has increased dramatically. So if the documents one is working with are older documents, it may be worth the time to rescan the document if it is an old one. However, if the only hard copy of the document which is available is an old photocopy with lots of noise on it, then there is little one can do about such a situation.
+In this example, you can see how all of the background pixels have a similar color to the pixels which define the "text" of this image. You can also see how the middle word (reimbursement) is not at all clear. In particular the "s" in the middle of the word has been smudged so that there is no defined pattern which an OCR software can utilize.
 
-**TOP TIP**: *minimize the OCR-ed area*. Minimizing the OCR-ed area is not available with all OCR software. In some OCR software suites, one can select via a graphical user interface, the area which the OCR software will analyze. The benefit of closely matching the area of the image which the OCR software will analyze to that human determined area of text on the page is that it will minimize the amount of noise a bad scan will output, as noise which is not within text blocks will not be analyzed. The screenshots below demonstrate how to do this in one OCR software.
+![noise example 2](/{{ site.images_dir }}/pdf/noise2.png)
 
-<!-- TODO: add OCR area determination screenshots here -->
+In this example, you can see even more noise. The green is used by the OCR software which was used for this example to mean "I will recognize text within this space". When the OCR software used for this example began it did a pre-process of the text and attempted to define where text was. As any human can see there is no reasonable text within this green area; however the computers don't have such advanced pattern recognition skills as humans do so it only sees that there appear to be dark pixels against a white background so there is likely text to recognize within this block.
+
+![noise example 3](/{{ site.images_dir }}/pdf/noise3.png)
+
+In this example, you can see some of the results which noise produces. This image was produced after the OCR process was finished and the output was opened in a spreadsheet program the noise from the example produces quite a bit of unusable information which will get in the way of accomplishing a clean OCR of the document.
+
+**TOP TIP TO REDUCE NOISE**: *get good scans*. The best way to reduce noise in a digital image is a good scan of the document. Over the past two decades scanner technology has increased dramatically. So if the documents one is working with are older documents, it may be worth the time to rescan the document if it is an old one. However, if the only hard copy of the document which is available is an old photocopy with lots of noise on it, then there is little one can do about such a situation.
+
+The second variable which users of OCR programs can utilize to improve the accuracy of an OCR process is to minimize the OCR'ed area. This will greatly reduce the amount of noise which is captured during the OCR process. Each OCR program has its own way of defining the area of the image in which it should look for text, so users will have to consult their own particular OCR software to determine the manner in which it operates.
+
+![area example before](/{{ site.images_dir }}/pdf/area1.png)
+
+As mentioned above, in the OCR software used for this example the area which the OCR software will look in to find text is marked in green by the software when it loads image files.
+
+![area example after](/{{ site.images_dir }}/pdf/area2.png)
+
+After modification, there is much less area for the OCR software to look in.
+
+**TOP TIP TO INCREASE ACCURACY**: *minimize the OCR-ed area*. Minimizing the OCR-ed area is not available with all OCR software. In some OCR software suites, one can select via a graphical user interface, the area which the OCR software will analyze. The benefit of closely matching the area of the image which the OCR software will analyze to that human determined area of text on the page is that it will minimize the amount of noise a bad scan will output, as noise which is not within text blocks will not be analyzed. The screenshots below demonstrate how to do this in one OCR software.
 
 ### Optical Character Recognition -- Exporting
 
