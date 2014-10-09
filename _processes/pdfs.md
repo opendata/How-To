@@ -143,4 +143,55 @@ Usually the best way to perform an automatic cleaning of the text layer is to bu
 
 ## Step 3 -- Process the Text Into the Required Data Format
 
-This step is outside the scope of this page as once the data is processed into usable text, then it is a simple matter of transforming the text into the required format.
+This step is mostly outside the scope of this page as once the data is processed into usable text, then it is a simple matter of transforming the text into the required format. However, for those who have not had to go through the process of struggling to extract information from a corpus of PDF documents which can be structured, scripted, and used by other programs this section will provide an overview of a few tools which are helpful in this process. There is a lot of ways to render documents *into* PDF file formats. However, there are not as many tools, across the various programming languages, which will allow information contained *within* PDF file formats to be extracted and utilized. This section will focus solely on the latter of these two and will not speak to the former. All of the tools covered below are free and open source.
+
+### [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
+
+pdf2htmlEX is a very sophisticated system written primarily in C++. The tool introduces itself as follows:
+
+> pdf2htmlEX renders PDF files in HTML, utilizing modern Web technologies. Academic papers with lots of formulas and figures? Magazines with complicated layouts? No problem!
+
+Its features include:
+
+> * Native HTML text with precise font and location.
+> * Flexible output: all-in-one HTML or on demand page loading (needs JavaScript).
+> * Moderate file size, sometimes even smaller than PDF.
+> * Support for links, outlines (bookmarks), printing, SVG background, Type 3 fonts and more
+
+pdf2htmlEX is a good *first step* tool. Since it works to build the PDF text into html, later that HTML can then be processed by the many HTML scraping and rendering tools to extract the usable information from the tool.
+
+The documentation for pdf2htmlEX is excellent and it is heavily developed tool (as of the time of this writing).
+
+### [Tabula](https://github.com/tabulapdf/tabula)
+
+> [Tabula](http://tabula.nerdpower.org/) is a tool for liberating data tables trapped inside PDF files.
+
+This is another excellent tool -- especially for data oriented folks who need their data to be formulated into a `csv` format. Tabula is written in a combination of Java, Ruby, and Javascript. It works in a broswer, but only runs on a local computer to reduce security concerns. Here is how Tabula introduces itself:
+
+> If you’ve ever tried to do anything with data provided to you in PDFs, you know how painful this is — you can’t easily copy-and-paste rows of data out of PDF files. Tabula allows you to extract that data in CSV format, through a simple web interface
+
+Although it does have numerous dependency requirements and is *slightly* more difficult to install than pdf2htmlEX, for those who work with tables of data it will be well worth your time to install and learn this tool. It is another excellent and heavily developed tool.
+
+### [PDFMiner](https://github.com/euske/pdfminer)
+
+PDFMiner is a tool for extracting nearly all of the information from the PDF file. It is written in Python, so if you are a Python developer it is likely the best place to start if you need to extract information from a PDF. The tool introduces itself as follows:
+
+> PDFMiner is a tool for extracting information from PDF documents. Unlike other PDF-related tools, it focuses entirely on getting and analyzing text data. PDFMiner allows one to obtain the exact location of text in a page, as well as other information such as fonts or lines. It includes a PDF converter that can transform PDF files into other text formats (such as HTML). It has an extensible PDF parser that can be used for other purposes than text analysis.
+
+To install this tool, one only needs Python which comes on all Linux and OSX based systems. It is currently a fully mature, heavily developed tool.
+
+### [PDF Reader](https://github.com/yob/pdf-reader)
+
+PDF::Reader is, roughly, a Ruby equivalent to PDFMiner -- which is written in Python. It introduces itself as follows:
+
+> The PDF::Reader library implements a PDF parser conforming as much as possible to the PDF specification from Adobe. It provides programmatic access to the contents of a PDF file with a high degree of flexibility... This is primarily a low-level library that should be used as the foundation for higher level functionality it's not going to render a PDF for you. There are a few exceptions to support very common use cases like extracting text from a page.
+
+Similarly to PDFMiner, this is a good tool to begin with for Ruby developers if they need to extract information from a PDF file. It is mature and heavily developed.
+
+### [docSplit](https://github.com/documentcloud/docsplit)
+
+docSplit is less of a full scale PDF reader solution and more of a purpose built tool. It introduces itself as follows:
+
+> Docsplit is a command-line utility and Ruby library for splitting apart documents into their component parts: searchable UTF-8 plain text, page images or thumbnails in any format, PDFs, single pages, and document metadata (title, author, number of pages...)
+
+As stated, it is a Ruby based tool. That said, little to no knowledge of Ruby is required to utilize the tool (unlike with PDF Reader).
