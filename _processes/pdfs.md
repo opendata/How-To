@@ -195,3 +195,7 @@ docSplit is less of a full scale PDF reader solution and more of a purpose built
 > Docsplit is a command-line utility and Ruby library for splitting apart documents into their component parts: searchable UTF-8 plain text, page images or thumbnails in any format, PDFs, single pages, and document metadata (title, author, number of pages...)
 
 As stated, it is a Ruby based tool. That said, little to no knowledge of Ruby is required to utilize the tool (unlike with PDF Reader).
+
+# Conclusion
+
+While working with PDFs as a transmitter of information is possible, this is not the problem set which the PDF file format was meant to address. The format is meant to provide a means of rendering documents, rather than providing access to the information in those documents. At the current time, however, many public agencies continue to publish information in PDF format. This guide has been written for those who wish to consume this information which is contained within a PDF in ways which are beyond simply reading the document. It has covered a bit of technical background regarding the PDF file format, how to work with OCR software, and some of the tools for extracting information from a PDF file which can be consumed by other services beyond the human eyes and brain.
