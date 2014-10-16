@@ -24,6 +24,6 @@ Who wants this data.
 
 ## Experts
 
-Domain experts who are interested in open data and who might be willing to talk to you about geodata.
+Domain experts who are interested in open data and who might be willing to talk to you.
 
 * [Shelby Johnson](http://www.gis.state.ar.us/Staff/sjohnson.html), Arkansas Geographic Information Officer
