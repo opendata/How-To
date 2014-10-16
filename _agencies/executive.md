@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Governmental Executive Branches
+title: Executive Branch
 ---
 
 {:toc}
