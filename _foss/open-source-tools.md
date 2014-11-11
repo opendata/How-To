@@ -13,3 +13,5 @@ title: Free and Open Source Software Alternatives to Proprietary Software
 |---------------------+----------------------------+------------|
 | Microsoft Office    | LibreOffice                | Office     |
 |---------------------+----------------------------+------------|
+| ArcGIS              | QGIS                       | GIS        |
+|--------------------+-----------------------------+------------|
