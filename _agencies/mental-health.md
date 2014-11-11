@@ -9,3 +9,4 @@ title: Mental Health Agencies
 
 * group homes
 * licensed mental health providers
+* mental health facility bed availability
