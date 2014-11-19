@@ -23,7 +23,7 @@ Held by the legislature, this is a record of the legislative activities of the s
 
 ## Laws
 
-Often held by the legislature. Law data is neccesary in order to connect regulations to enabling laws, to connect court rulings to anything at all, and to understand legislative data. It should include the section identifier, title (if applicable), the text of the law, and the statutory history of the law.
+Often held by the legislature. Law data is neccessary to connect regulations to enabling laws, to connect court rulings to anything at all, and to understand legislative data. It should include the section identifier, title (if applicable), the text of the law, and the statutory history of the law.
 
 ## Address Points
 
