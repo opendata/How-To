@@ -5,26 +5,23 @@ layout: default
 
 {:toc}
 
-
 # Introduction
 
-* they provide a central, searchable place for people to find data
-* some will automatically convert data from one format to others, so even though you can only provide CSV, it will generate XML, JSON, etc.
-* some will visualize datasets right in the browser, letting people map, sort, search, and combine datasets, without knowing how to program
-* some repositories can be syndicated, allowing other organizations to automatically incorporate your own data (e.g., a state transportation agency could gather up all localities' transportation data)
-* you can either upload files to be stored in the repository or point the repository at an existing website address where the file lives
+Generally, a data repository serves as the centerpiece of an open data effort. It serves as a central location to find data, a venue for standardizing practices, and a showpiece of the use of that data. In a practical sense, a repository serves as a central, searchable place for people (both outside and inside of government) to find data.
+
+Some repository software will automatically convert data from one format to others, so even though you can only provide data in one format (e.g., CSV), it will generate XML, JSON, Excel, etc.
+
+Some software will visualize datasets right in the browser, letting people map, sort, search, and combine datasets, without requiring any knowledge of how to program.
+
+And some repository software allows syndicatation, permitting other organizations to automatically incorporate your own data (e.g., a state transportation agency could gather up all localities' transportation data and republish it).
+
+Generally, repository software supports either uploading files to be stored in the repository, or pointing the repository at an existing website address where the file lives. The former works well for smaller governments (localities, small agencies), while the latter works well for larger governments, for which centralizing assets can be impractical.
+
+To make a broad division, there are three types of hosting available: commercial hosting, self-hosting, and free hosting.
 
 # Commercial Hosting
 
-* little to no technical knowledge required
-* they’ll hold your hand through the process
-* your organization doesn’t have to provide any technical infrastructure (e.g., servers)
-
-
-## GitHub
-
-* http://github.com/
-* not really a data repository, but it can serve as one
+For most governments, commercial hosting is going to be the most viable options. Paying somebody to host your own data requires little to no technical knowledge on the part of your government, and they’ll hold your hand through the process. Your organization won't have to provide any technical infrastructure (e.g., servers) or know how to program.
 
 ## Junar
 
@@ -44,6 +41,7 @@ layout: default
 ## OpenData.city
 
 * http://www.opendata.city/
+* Ontodia
 * free tier (<=20 datasets)
 * less expensive than Socrata
 * for up to 100 datasets and 100GB, $499/month
@@ -61,37 +59,56 @@ layout: default
 * [demo site](https://sandbox.demo.socrata.com/)
 
 
-# Open-Source Software
+# Open Source Software
 
-* requires significant technical knowledge or paying a consultant who has that knowledge
+There are some excellent open source data repository programs that are solid options for technically savvy governments, for governments with a committment to use the open source software, or for governments with the budget to hire a consultant to deploy the software.
 
 ## CKAN
 
+"CKAN" is nominally an initialism for "Comprehensive Knowledge Archive Network," but it’s only ever referred to as “CKAN.” A creation of the UK-based Open Knowledge Foundation, CKAN is the most commonly used open source data repository software.
+
 * users include...
 * consultants include...
+  * http://www.ontodia.com/solutions/data-publishing/
 * paid hosts include...
   * http://ckanexpress.com/
+  * http://opendata.city/
 * example site
 
 ## DKAN
 
+DKAN is a clone of CKAN, rewritten as a Drupal module. For an organization that uses the Drupal content management system and also wants a data repository, DKAN is an especially good option.
+
+* http://nucivic.com/dkan/, https://www.drupal.org/project/dkan
 * users include...
 * consultants include...
 * paid hosts include...
-* example site
+  * [NuCivic Data](http://nucivic.com/data/enterprise/)
+* demo site
+  * http://demo.getdkan.com/
 
 ## Open Data Catalog
 
+This was written for Philadelphia by Azavea. It is not as widely used as the other open source options, but it is full-featured and robust.
+
+* https://github.com/azavea/Open-Data-Catalog
 * users include...
+  * [Philadelphia](http://www.opendataphilly.org/)
 * consultants include...
-* paid hosts include...
-* example site
+  * Azavea
 
 # Free Hosting
+
+There are some options available for free hosting of open data repositories. (Note that the above listed open source options are also free, but require setup, a server, and maintenance time.) Generally, this is the lowest tier of service provided by paid hosts.
 
 ## DataHub
 
 The Open Knowledge Foundation provides [DataHub](http://datahub.io/), a free, CKAN-based data host. It's a large, collective repository—users don’t get their own site, although it is possible to list only one’s own data, and share a URL that only lists those datasets.
+
+## GitHub
+
+* http://github.com/
+* not really a data repository, but it can serve as one
 
 ## OpenData.city
 
