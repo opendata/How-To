@@ -24,9 +24,9 @@ To make a broad division, there are three types of hosting available: commercial
 An at-a-glance list of available data repositories.
 
 | Name              | Type          | Notes
-|-------------------|---------------|--------------|
+|:------------------|:--------------|:-------------|
 | CKAN              | open source   |              |
-| DataHub           | free, hosted  | CKAN-powered
+| DataHub           | free, hosted  | CKAN-powered |
 | DKAN              | open source   |              |
 | GitHub            | free, hosted  |              |
 | Junar             | hosted        |              |
