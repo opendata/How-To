@@ -127,6 +127,8 @@ The Open Knowledge Foundation provides [DataHub](http://datahub.io/), a free, CK
 
 * http://github.com/
 * not really a data repository, but it can serve as one
+* it has none of the niceties of proper repository software (conversion of formats, retrieving data from remote URLs, etc.), but it does offer previews of some types of data, publicly track changes, and it’s a reasonable place to store datasets
+* it does offer one significant advantage, which is that GitHub—unlike any other repository software—provides a mechanism for people to propose changes to your datasets, which you can accept or decline, if they spot mistakes or areas for enhancement
 
 ## OpenData.city
 
