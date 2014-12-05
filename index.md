@@ -10,6 +10,7 @@ homepage: true
 1. [The Basics of Open Data](basics/)
 1. [What Agencies Should Publish](agencies/)
 1. [Free Tools To Help with Open Data](foss/)
+1. [Further Reading](reading.html)
 
 ## Status
 
