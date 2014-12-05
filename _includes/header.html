@@ -21,8 +21,9 @@
   <div id="container">
     <div class="inner">
       <header>
-        <h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
-        <h2>{% if page.lede %}{{ page.lede }}{% endif %}</h2>
+        <h1>How to Publish Open Data</h1>
+        {% unless page.homepage %}<h2>{% if page.title %}{{ page.title }}{% endif %}</h2>{% endunless %}
+        <h3>{% if page.lede %}{{ page.lede }}{% endif %}</h3>
       </header>
 
       {% unless page.homepage %}
