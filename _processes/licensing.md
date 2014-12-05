@@ -12,3 +12,4 @@ layout: default
 * if your state does permit itself to claim copyright, then you must determine for each dataset what its licensing status is
 * there is no point in publishing data that is copyrighted under terms that prohibit it from being reused
 * if you are in a position to do so, release copyrighted data under [a Creative Commons license](https://creativecommons.org/choose/), preferably a [Creative Commons Zero license](https://creativecommons.org/about/cc0), which waives copyright; this is arguably better than dedicating work to the public domain
+* for more information, read _Open Government Data_’s “[Best-Practices Language for Making Data ‘License-Free’](http://theunitedstates.io/licensing/).”
