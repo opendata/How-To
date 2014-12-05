@@ -7,11 +7,10 @@ homepage: true
 
 # Table of Contents
 
-* [What are the Basics of Open Data?](basics/)
-* [What Should Agencies Publish?](agencies/)
-* [How to "Do" Open Data](processes/)
-* [What are some Free Tools To Help with Open Data](foss/)
+1. [The Basics of Open Data](basics/)
+1. [What Agencies Should Publish](agencies/)
+1. [Free Tools To Help with Open Data](foss/)
 
 ## Status
 
-This is a brand-new project, mostly skeletal in its contents. See [Issues](https://github.com/USODI/How-To/issues) to see what needs to be done and to lend a hand.
+This is a book in the process of being written, in some areas skeletal in its contents. See [Issues](https://github.com/USODI/How-To/issues) to see what needs to be done and to lend a hand.
