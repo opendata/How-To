@@ -19,6 +19,24 @@ Generally, repository software supports either uploading files to be stored in t
 
 To make a broad division, there are three types of hosting available: commercial hosting, self-hosting, and free hosting.
 
+# Overview
+
+An at-a-glance list of available data repositories.
+
+| Name              | Type          | Notes
+|-------------------|---------------|--------------|
+| CKAN              | open source   |              |
+| DataHub           | free, hosted  | CKAN-powered
+| DKAN              | open source   |              |
+| GitHub            | free, hosted  |              |
+| Junar             | hosted        |              |
+| NuData            | hosted        |              |
+| OpenData.city     | free & hosted | CKAN-powered |
+| Open Data Catalog | open source   |              |
+| Socrata           | hosted        |              |
+
+Details on each follow.
+
 # Commercial Hosting
 
 For most governments, commercial hosting is going to be the most viable options. Paying somebody to host your own data requires little to no technical knowledge on the part of your government, and they’ll hold your hand through the process. Your organization won't have to provide any technical infrastructure (e.g., servers) or know how to program.
