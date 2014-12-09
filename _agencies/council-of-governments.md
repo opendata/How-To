@@ -5,6 +5,8 @@ title: Councils of Governments
 
 {:toc}
 
+(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
+
 (aka "planning districts," aka "regional councils")
 
 ## Data

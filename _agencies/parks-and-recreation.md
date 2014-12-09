@@ -5,6 +5,8 @@ title: Parks and Recreation
 
 {:toc}
 
+(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
+
 ## Data
 
 * parks (location, amenities, hours, geodata)

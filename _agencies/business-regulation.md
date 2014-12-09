@@ -5,6 +5,8 @@ title: Business Regulation
 
 {:toc}
 
+(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
+
 These functions frequently fall within the Secretary of State’s office.
 
 ## Data

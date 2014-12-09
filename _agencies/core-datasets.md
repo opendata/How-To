@@ -5,6 +5,8 @@ layout: default
 
 {:toc}
 
+(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
+
 # Introduction
 
 There are core datasets that both state and local governments should provide. These are pivotal datasets, the equivalent of connective tissue. Without these datasets, it is difficult to use that governments' open data in order to accomplish basic task. _There are other datasets that are also very important,_ but these are the datasets that unlock the potential of many of those other datasets.

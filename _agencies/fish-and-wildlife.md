@@ -5,6 +5,8 @@ title: Fish and Wildlife
 
 {:toc}
 
+(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
+
 ## Data
 
 * hunting seasons, per species
