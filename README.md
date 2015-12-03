@@ -1,12 +1,14 @@
-# How-To
+---
+layout: default
+title: How to Publish Open Data
+lede: 'A practical guide to opening data, for government employees whose job it is to make that happen.'
+homepage: true
+---
 
-A guide for governments looking to publish open data.
+## Introduction
 
-[See Philadephia's guide](https://docs.google.com/document/d/1Kd4AOoRG8q18PVZ0JMusgKWJmgjrWvv3iTdKUjLEdT4/edit).
+This is a practical guide to opening data, for government employees whose job it is to make that happen. Maybe you’re excited to open your data, maybe you’re just checking off a box, maybe somebody is making you do this. But it’s a thing that has to happen. This is for you.
 
-* create a generic guide
-* create guides per agency
-  * provide links to relevant software
-  * document frequently used records management software within that type of agency
-  * list datasets that they should publish
-    * look at the OKFN open data census to compare datasets
+## Status
+
+This is a book in the process of being written, in some areas skeletal in its contents. See [Issues](https://github.com/opendata/How-To/issues) to see what needs to be done and to lend a hand.
