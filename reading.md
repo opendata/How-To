@@ -1,9 +1,4 @@
----
-layout: default
-title: Further Reading
----
-
-{:toc}
+# Further Reading
 
 * [Simple Open Data](http://simpleopendata.com/)
 * Mark Headd’s “[Open Data Guide](http://opendata.guide/)”
