@@ -1,12 +1,10 @@
-# Working with PDFs
-
-## Introduction to Portable Document Format
+# Introduction to Portable Document Format
 
 The Portable Document Format (or "PDF") is an excellent way to share documents. Documents consistently render across all devices -- from desktop computers to smart televisions -- in the exact manner which the publisher of the document intended. Unfortunately, the advantages which the PDF format gives to publishers of *documents* are mostly the same as the disadvantages which the PDF format gives to publishers of *data*.
 
-### Some Background on PDFs
+## Some Background on PDFs
 
-##### Pulling *data* out of PDF *documents* can be an arduous task.
+#### Pulling *data* out of PDF *documents* can be an arduous task.
 
 PDF documents are essentially an image format. This is why they are so often used when scanning and displaying documents -- and what allows for documents to render consistently across devices. As such, text within a PDF is rendered in layers. When a document generating program renders a PDF what happens is that it compiles an image of the page. If there is text which is to be rendered that text is, depending on how the PDF was constructed, rendered as an additional layer underneath the image. While the PDF Reference does allow for numerous publishing particularities to render text appropriately, many programs -- particularly with regards to Form documents or scanned documents -- do not formulate their PDFs in such a manner. This is why when you select text from a PDF viewer there is sometimes an offset in the text that is selected and that which the human eye is seeing. More simply PDF viewers show you the image of the page but when you want to select text the PDF selects the background layer which contains the text if that is how the PDF was built.
 
@@ -18,7 +16,7 @@ Another challenge which the PDF specification presents to programs which seek to
 
 Another downside to the manner in which PDF documents do not consistently render text in any particular order affects a user's ability to even copy and paste text from a PDF document into another program for citations or other purposes. If one has ever tried to copy and paste from a PDF one has seen this because when one pastes the text block into another program the end of the lines as rendered by the PDF original are almost always pasted in as new lines into the new program. Lawyers, academics, and others who work with PDF documents on a consistent basis have likely wasted, collectively, thousands of hours of simply backspacing out the new lines from a block of PDF text after pasting into word processors.
 
-### Why is This Important
+## Why is This Important
 
 The above (albeit brief) overview is important to understand because PDF has become somewhat of a default standard for publication of *data*. This is particularly true in the legal field, but it is also true in other fields. This is suboptimal for a few reasons.
 
@@ -32,7 +30,7 @@ It is certainly not the makers of the ebook reader's responsibility to handle fo
 
 The same reasoning applies to legislation, regulations, and many other sets of data which require context and semantics in order for machines to process them properly -- which would increase the flexibility in how entities and individuals consume that data.
 
-### Authenticity of Publication
+## Authenticity of Publication
 
 One of the largest reasons for why lawyers in particular publish documents in PDF format is because there is a perception that PDFs are more difficult to modify. This perception is not completely wrong. Neither is it completely correct. As with all digital formats, which are simply a collection of `1`'s and `0`'s PDF's *can* be changed. All one really needs to change a PDF format is some clever [GIMP](http://www.gimp.org/) or Photoshop skills. Even Adobe Acrobat PRO can allow one to change a PDF document. While it takes some work to change a PDF, PDF's should not be thought of as an immutable format; for example, to change a text based PDF one needs to change the image layer and the text layer, but this is not a difficult process. To combat such an ability to change the document, Adobe allows document publishers to "lock" PDFs. However, there are [numerous web sites](https://www.google.com/search?q=unlock+pdf&gws_rd=ssl) which allow users to "unlock" PDFs.
 
@@ -42,7 +40,7 @@ However, many public agencies, in pursuit of this laudable goal, have locked the
 
 One such inexpensive and non-proprietary method of ensuring the authenticity of a document is the Free and Open Source PGP (Pretty Good Privacy) system which is available for all major operating systems. Using PGP, document publishers are able to sign a document as being authentic. This electronic "signature" performs a cryptographically secure function on the `0`s and `1`s of any file to formulate a unique "fingerprint" of these bits. If any single bit of all of the bits is changed then the fingerprint of the file will change. What a PGP signature does is it adds an authentic electronic signature to verify a particular fingerprints authenticity. PGP has a very simple mechanism for not only signing a file, but also for verifying a signature. This method of certifying a document's authenticity is not only free and open source, but also **significantly** safer than only relying on even a "locked" PDF.
 
-## Working with PDFs
+# Working with PDFs
 
 Despite the distinct disadvantages which PDFs have as a format for publishing data, many public agencies still publish data in PDF formats. The remainder of this page will discuss the various methods for extracting data from published PDFs.
 
@@ -56,11 +54,11 @@ As with any data-driven task, one of the most important aspects of extracting da
 
 When one is dealing with documents which already have a text layer to them, the first two steps would generally be ignored. The three step process outlined above is general in nature and is meant only to be illustrative. Each data derivation task will require its own plan for how to transform the PDF documents into machine usable data.
 
-### Step 1 -- Recognize the Document's Text
+## Step 1 -- Recognize the Document's Text
 
 Optical Character Recognition, or OCR, is the task of processing image data and extracting useful text out of the image. It is sort of like machines "reading" a document. In actuality what is happening is that the machine is analyzing the pixels on the screen and matching the boundaries of differences in the pixel colors against patterns which have been preprogrammed into the OCR software.
 
-#### Optical Character Recognition -- Background
+### Optical Character Recognition -- Background
 
 Digital images, for those who are not aware, are a set of very small squares (also called pixels) which have a specific color. Below is an example of the English language character "e" which has been zoomed in using GIMP.
 
@@ -80,7 +78,7 @@ OCR software is exceedingly complex for a number of reasons. Differences in how 
 
 For this reason, perhaps among others, the state of free and open source OCR software is not currently optimal. [Here is a Wikipedia comparison of OCR software](http://en.wikipedia.org/wiki/Comparison_of_optical_character_recognition_software).  Although it is only one test, this blog post is a demonstrator of [the differences in OCR software](http://www.splitbrain.org/blog/2010-06/15-linux_ocr_software_comparison). At this time, proprietary OCR software drastically outperforms free and open source OCR software and as such could be worth a public agency's investment depending on the amount and type of OCR jobs the public agency is needing to perform.
 
-#### Optical Character Recognition -- Top Tips
+### Optical Character Recognition -- Top Tips
 
 Working with OCR software can be a challenge, but it is often more efficient than typing large amounts of pages. As stated above, there are numerous variables which contribute to the success of an OCR rendering process; there are, however, two main variables which users can somewhat control: the "noise" on the page which a OCR software is forced to analyze, and the "area" of the page which the OCR software is forced to analyze.
 
@@ -116,31 +114,31 @@ After modification, there is much less area for the OCR software to look in.
 
 **TOP TIP TO INCREASE ACCURACY**: *minimize the OCR-ed area*. Minimizing the OCR-ed area is not available with all OCR software. In some OCR software suites, one can select via a graphical user interface, the area which the OCR software will analyze. The benefit of closely matching the area of the image which the OCR software will analyze to that human determined area of text on the page is that it will minimize the amount of noise a bad scan will output, as noise which is not within text blocks will not be analyzed. The screenshots below demonstrate how to do this in one OCR software.
 
-#### Optical Character Recognition -- Exporting
+### Optical Character Recognition -- Exporting
 
 Many OCR software suites are capable of exporting to different formats. The Wikipedia article linked to above comparing OCR software suites has a column for exporting formats. This is important mostly because how one approaches the general Step 2 of cleaning the noise from the text will depend on the type of data and how one is attempting to approach cleaning the noise from the text.
 
-### Step 2 -- Clean the Text Layer
+## Step 2 -- Clean the Text Layer
 
 In general the second step in processing PDF documents into machine usable data is to clean the text which has been recognized by the OCR software. This step can be a grind because in general it requires human judgment to determine what is noise and what is not. Human judgment need not *always* be required, there are methods for machine cleaning of OCR analyzed documents which shall be covered below; however, human judgment is currently the safest method of analyzing documents. There is a middle ground between manual (human) cleaning and automatic (machine) cleaning of the text layer which is to perform an initial sweep of the text layer manually and then finalize the cleaning process via an automated process.
 
-#### Manual Cleaning of the Text Layer
+### Manual Cleaning of the Text Layer
 
 The goal of this step is to get the text layer into a state where the machines can then churn through the text layer and turn it into a usable format. As stated above, manual cleaning, while slow, is currently the safest way to process data derived from PDF documents. One must be forewarned, this is slow and arduous work. There is a reason why people call this work, "the depths of the OCR mines" or "eyeball bleeding work". However, at times it is necessary.
 
 When manually cleaning the text rendered by OCR software, the strategy one adopts will usually depend on the type of document being analyzed. If one is parsing a document which contains tabular data, then a spreadsheet may be the most relevant piece of software to utilize for the cleaning step. If one is parsing a document which contains text blocks, then a good text editor with regular expression support is likely to be the most relevant piece of software to utilize for the cleaning step. In general, word processors are usually not useful to clean data driven documents because word processors generally add another layer of complexity to the overall file structure, do not handle text documents with ease, and generally do not have regular expression support.
 
-#### Automatic Cleaning of the Text Layer
+### Automatic Cleaning of the Text Layer
 
 In order to use computers to clean the text layer of a document which has been analyzed by OCR software you must first have an understanding of what the "signal" and "noise" once the OCR process has ended. This requires, at a minimum, opening the output of the OCR process and skimming through a good portion of the document to see what has been outputted.
 
 Usually the best way to perform an automatic cleaning of the text layer is to build a script in the scripting language which you are most familiar with to purge the document of unwanted characters. The script which one builds will likely rely heavily upon regular expressions. Regular expressions, for those unfamiliar with that term, are a powerful method of matching characters in a block of text against various patterns. One book which is commonly referred to as the "bible" of regular expressions is Mastering Regular Expressions by Jeff Friedl, however there are many books on this subject. If one is in a job which requires a significant amount of OCR or PDF processing work, it may be beneficial to have a keen understanding of regular expressions.
 
-### Step 3 -- Process the Text Into the Required Data Format
+## Step 3 -- Process the Text Into the Required Data Format
 
 This step is mostly outside the scope of this page as once the data is processed into usable text, then it is a simple matter of transforming the text into the required format. However, for those who have not had to go through the process of struggling to extract information from a corpus of PDF documents which can be structured, scripted, and used by other programs this section will provide an overview of a few tools which are helpful in this process. There is a lot of ways to render documents *into* PDF file formats. However, there are not as many tools, across the various programming languages, which will allow information contained *within* PDF file formats to be extracted and utilized. This section will focus solely on the latter of these two and will not speak to the former. All of the tools covered below are free and open source.
 
-#### [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
+### [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
 
 pdf2htmlEX is a very sophisticated system written primarily in C++. The tool introduces itself as follows:
 
@@ -157,7 +155,7 @@ pdf2htmlEX is a good *first step* tool. Since it works to build the PDF text int
 
 The documentation for pdf2htmlEX is excellent and it is heavily developed tool (as of the time of this writing).
 
-#### [Tabula](https://github.com/tabulapdf/tabula)
+### [Tabula](https://github.com/tabulapdf/tabula)
 
 > [Tabula](http://tabula.nerdpower.org/) is a tool for liberating data tables trapped inside PDF files.
 
@@ -167,7 +165,7 @@ This is another excellent tool -- especially for data oriented folks who need th
 
 Although it does have numerous dependency requirements and is *slightly* more difficult to install than pdf2htmlEX, for those who work with tables of data it will be well worth your time to install and learn this tool. It is another excellent and heavily developed tool.
 
-#### [PDFMiner](https://github.com/euske/pdfminer)
+### [PDFMiner](https://github.com/euske/pdfminer)
 
 PDFMiner is a tool for extracting nearly all of the information from the PDF file. It is written in Python, so if you are a Python developer it is likely the best place to start if you need to extract information from a PDF. The tool introduces itself as follows:
 
@@ -175,7 +173,7 @@ PDFMiner is a tool for extracting nearly all of the information from the PDF fil
 
 To install this tool, one only needs Python which comes on all Linux and OSX based systems. It is currently a fully mature, heavily developed tool.
 
-#### [PDF Reader](https://github.com/yob/pdf-reader)
+### [PDF Reader](https://github.com/yob/pdf-reader)
 
 PDF::Reader is, roughly, a Ruby equivalent to PDFMiner -- which is written in Python. It introduces itself as follows:
 
@@ -183,7 +181,7 @@ PDF::Reader is, roughly, a Ruby equivalent to PDFMiner -- which is written in Py
 
 Similarly to PDFMiner, this is a good tool to begin with for Ruby developers if they need to extract information from a PDF file. It is mature and heavily developed.
 
-#### [docSplit](https://github.com/documentcloud/docsplit)
+### [docSplit](https://github.com/documentcloud/docsplit)
 
 docSplit is less of a full scale PDF reader solution and more of a purpose built tool. It introduces itself as follows:
 
@@ -191,6 +189,6 @@ docSplit is less of a full scale PDF reader solution and more of a purpose built
 
 As stated, it is a Ruby based tool. That said, little to no knowledge of Ruby is required to utilize the tool (unlike with PDF Reader).
 
-## Conclusion
+# Conclusion
 
 While working with PDFs as a transmitter of information is possible, this is not the problem set which the PDF file format was meant to address. The format is meant to provide a means of rendering documents, rather than providing access to the information in those documents. At the current time, however, many public agencies continue to publish information in PDF format. This guide has been written for those who wish to consume this information which is contained within a PDF in ways which are beyond simply reading the document. It has covered a bit of technical background regarding the PDF file format, how to work with OCR software, and some of the tools for extracting information from a PDF file which can be consumed by other services beyond the human eyes and brain.
