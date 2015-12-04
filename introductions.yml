@@ -1,0 +1,52 @@
+site_name: How to Open Data
+site_url: https://how-to.usopendata.org/
+site_description: A practical guide to opening data, for government employees whose job it is to make that happen.
+
+repo_url: https://github.com/opendata/How-To/
+docs_dir: .
+
+pages:
+- Home: README.md
+- The Basics of Open Data
+  - Introduction: The-Basics-of-Open-Data/index.md
+  - API versus Bulk Data: The-Basics-of-Open-Data/API-vs-Bulk-Data.md
+  - Asssessing Openness: The-Basics-of-Open-Data/Assessing-Openness.md
+  - CKAN Installation and Configuration: The-Basics-of-Open-Data/CKAN-Configuration.md
+  - Data Repositories: The-Basics-of-Open-Data/Data-Repositories.md
+  - Inventorying Your Data: The-Basics-of-Open-Data/Inventorying-Your-Data.md
+  - Licensing Your Data: The-Basics-of-Open-Data/Licensing-Your-Data.md
+  - Publishing Spreadsheets as Data: The-Basics-of-Open-Data/Publishing-Spreadsheets.md
+  - Terms of Service: The-Basics-of-Open-Data/Terms-of-Service.md
+  - Why Publish Open Data?: The-Basics-of-Open-Data/Why-Open-Data.md
+  - Working with PDFs: The-Basics-of-Open-Data/Working-with-PDFs.md
+- What Agencies Should Publish
+  - Introduction: What-Agencies-Should-Publish/index.md
+  - Core Datasets: What-Agencies-Should-Publish/Core-Datasets.md
+  - All Agencies: What-Agencies-Should-Publish/All-Agencies.md
+  - By Agency
+    - Agriculture: What-Agencies-Should-Publish/Agriculture.md
+    - Attorney General: What-Agencies-Should-Publish/Attorney-General.md
+    - Business Regulation: What-Agencies-Should-Publish/Business-Regulation.md
+    - Conservation: What-Agencies-Should-Publish/Conservation.md
+    - Council of Governments: What-Agencies-Should-Publish/Council-of-Governments.md
+    - Education: What-Agencies-Should-Publish/Education.md
+    - Environmental-Quality: What-Agencies-Should-Publish/Environmental-Quality.md
+    - Executive: What-Agencies-Should-Publish/Executive.md
+    - Fish and Wildlife: What-Agencies-Should-Publish/Fish-and-Wildlife.md
+    - General Services: What-Agencies-Should-Publish/General-Services.md
+    - Geospatial: What-Agencies-Should-Publish/Geospatial.md
+    - Health: What-Agencies-Should-Publish/Health.md
+    - Law Enforcement: What-Agencies-Should-Publish/Law-Enforcement.md
+    - Mental Health: What-Agencies-Should-Publish/Mental-Health.md
+    - Parks and Recreation: What-Agencies-Should-Publish/Parks-and-Recreation.md
+    - Professional Oversight: What-Agencies-Should-Publish/Professions-Oversight.md
+    - Social Services: What-Agencies-Should-Publish/Social-Services.md
+    - Taxation: What-Agencies-Should-Publish/Taxation.md
+    - Transportation: What-Agencies-Should-Publish/Transportation.md
+    - Treasury: What-Agencies-Should-Publish/Treasury.md
+- Open Source Software
+  - Open Source Tools: Open-Source-Software/Open-Source-Tools.md
+  - What is Open Source?: Open-Source-Software/What-is-Open-Source.md
+- Further Reading: presentations/index.md
+
+theme: readthedocs
