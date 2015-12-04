@@ -15,11 +15,11 @@ If you can [install it using a Docker image](http://docs.ckan.org/en/latest/main
 
 Failing those options, you can always [install from source](http://docs.ckan.org/en/ckan-2.2/install-from-source.html). This is hard.
 
-# Paid hosting
+# Paid Hosting
 
 You can always just pay somebody to install and host CKAN. [This is a service that CKAN sells](http://ckan.org/solutions/pricing/), and more vendors are starting to offer this service.
 
-# Recommended additions
+# Recommended Additions
 
 * [FileStore](http://docs.ckan.org/en/1117-start-new-test-suite/filestore.html): Allows files to be uploaded to and stored within CKAN, instead of merely linking to them elsewhere.
 * [DataStore](http://docs.ckan.org/en/ckan-2.2/datastore.html): Opens up CSV and Excel files to store their contents, creating a lightweight API for the data and providing an on-screen preview of the data for end users.
