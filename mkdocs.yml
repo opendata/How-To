@@ -7,7 +7,7 @@ docs_dir: .
 
 pages:
 - Home: README.md
-- The Basics of Open Data
+- The Basics of Open Data:
   - Introduction: The-Basics-of-Open-Data/index.md
   - API versus Bulk Data: The-Basics-of-Open-Data/API-vs-Bulk-Data.md
   - Asssessing Openness: The-Basics-of-Open-Data/Assessing-Openness.md
@@ -19,11 +19,11 @@ pages:
   - Terms of Service: The-Basics-of-Open-Data/Terms-of-Service.md
   - Why Publish Open Data?: The-Basics-of-Open-Data/Why-Open-Data.md
   - Working with PDFs: The-Basics-of-Open-Data/Working-with-PDFs.md
-- What Agencies Should Publish
+- What Agencies Should Publish:
   - Introduction: What-Agencies-Should-Publish/index.md
   - Core Datasets: What-Agencies-Should-Publish/Core-Datasets.md
   - All Agencies: What-Agencies-Should-Publish/All-Agencies.md
-  - By Agency
+  - By Agency:
     - Agriculture: What-Agencies-Should-Publish/Agriculture.md
     - Attorney General: What-Agencies-Should-Publish/Attorney-General.md
     - Business Regulation: What-Agencies-Should-Publish/Business-Regulation.md
@@ -44,7 +44,7 @@ pages:
     - Taxation: What-Agencies-Should-Publish/Taxation.md
     - Transportation: What-Agencies-Should-Publish/Transportation.md
     - Treasury: What-Agencies-Should-Publish/Treasury.md
-- Open Source Software
+- Open Source Software:
   - Open Source Tools: Open-Source-Software/Open-Source-Tools.md
   - What is Open Source?: Open-Source-Software/What-is-Open-Source.md
 - Further Reading: presentations/index.md
