@@ -1,20 +1,23 @@
 # Assessing Openness
 
-(Note: The below is just notes in outline form. It remains to flesh this out into a proper chapter.)
+Data isn’t either open or closed. It’s not a switch that gets flipped, but instead a sliding scale, in which closed data is made increasingly open.
 
-* data isn’t either open or closed—it’s a sliding scale, not a switch that gets flipped
-* a popular assessment method is [5 Star Open Data](http://5stardata.info/)
+One popular assessment method is [5 Star Open Data](http://5stardata.info/). You probably should not use this to assess your data. That’s because it’s a standard that is promoted by people who are excited about something called “linked data.” The fact that you are reading this guide is solid evidence that you are not going to care about publishing “linked data,” a thing that is ultimately really about data, rather than open data, anyway.
 
-|       |   |
-|:------|:--|
-|       | any format, no open license                             |
-| ★     | any format, open license                                |
-| ★★    | structured data, open license                           |
-| ★★★   | structured data, open format, open license              |
-| ★★★★  | structured data, open format, open license, URIs        |
-| ★★★★★ | structured data, open format, open license, linked data |
+So let’s invent our own _three_-star standard here (which is really just the first three levels of the five-star standard).
 
-* for detailed information about each of these levels, see [5 ★ Open Data](http://5stardata.info/)
-* the fact that you’re reading this guide means that you’re going to do better than zero stars, but no better than three stars (sorry)
-* you should really shoot for three stars for all of your data—structured data, open format, open license
-* if you have important data that is only currently available in non-open formats (e.g., Excel) or even non-structured data (e.g., PDFs, Word), then go ahead and publish it in that format, because that's better than nothing, but move to publishing it as structured data in an open format as soon as practical
+## ★
+
+Take some data (say, an Excel file), put it on a website for people to download. Yay, you opened data! Give yourself a pat on the back.
+
+## ★★
+
+Now put an open license on that Excel file. That is, explicitly state that it’s in the public domain (as it probably is, since you work for a government). If it’s not, release it under an open license, like [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/). Now people have permission to redistribute your data and incorporate it into other works, which is great news.
+
+## ★★★
+
+Now publish your openly-licensed Excel file in an open format (e.g., [CSV](https://en.wikipedia.org/wiki/Comma-separated_values)). Congratulations—your data is now _very_ open data!
+
+## A Little Open is OK
+
+If you have important data that is only currently available in non-open formats (e.g., Excel) or even non-_structured_ data (e.g., PDFs, Word), then go ahead and publish it in that format! [It is far better to publish not-very-open data than to not publish data at all](https://usopendata.org/2014/05/23/municipal-data/).
