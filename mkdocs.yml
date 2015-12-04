@@ -9,15 +9,15 @@ pages:
 - Home: README.md
 - The Basics of Open Data:
   - Introduction: The-Basics-of-Open-Data/index.md
+  - Why Publish Open Data?: The-Basics-of-Open-Data/Why-Open-Data.md
+  - Inventorying Your Data: The-Basics-of-Open-Data/Inventorying-Your-Data.md
+  - Data Repositories: The-Basics-of-Open-Data/Data-Repositories.md
+  - Licensing Your Data: The-Basics-of-Open-Data/Licensing-Your-Data.md
+  - Publishing Spreadsheets as Data: The-Basics-of-Open-Data/Publishing-Spreadsheets.md
   - API versus Bulk Data: The-Basics-of-Open-Data/API-vs-Bulk-Data.md
   - Asssessing Openness: The-Basics-of-Open-Data/Assessing-Openness.md
   - CKAN Installation and Configuration: The-Basics-of-Open-Data/CKAN-Configuration.md
-  - Data Repositories: The-Basics-of-Open-Data/Data-Repositories.md
-  - Inventorying Your Data: The-Basics-of-Open-Data/Inventorying-Your-Data.md
-  - Licensing Your Data: The-Basics-of-Open-Data/Licensing-Your-Data.md
-  - Publishing Spreadsheets as Data: The-Basics-of-Open-Data/Publishing-Spreadsheets.md
   - Terms of Service: The-Basics-of-Open-Data/Terms-of-Service.md
-  - Why Publish Open Data?: The-Basics-of-Open-Data/Why-Open-Data.md
   - Working with PDFs: The-Basics-of-Open-Data/Working-with-PDFs.md
 - What Agencies Should Publish:
   - Introduction: What-Agencies-Should-Publish/index.md
