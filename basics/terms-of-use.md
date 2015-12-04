@@ -1,9 +1,4 @@
----
-title: Terms of Use
-layout: default
----
-
-{:toc}
+# Terms of Service
 
 (Note: The below is just notes in outline form. It remains to flesh this out into a proper chapter.)
 

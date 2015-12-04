@@ -1,9 +1,4 @@
----
-layout: default
-title: Treasury Departments
----
-
-{:toc}
+# Treasury Departments
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 

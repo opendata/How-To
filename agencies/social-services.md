@@ -1,9 +1,4 @@
----
-layout: default
-title: Social Services Agencies
----
-
-{:toc}
+# Social Services Agencies
 
 ## Data
 

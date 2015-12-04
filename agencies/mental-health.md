@@ -1,9 +1,4 @@
----
-layout: default
-title: Mental Health Agencies
----
-
-{:toc}
+# Mental Health Agencies
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 

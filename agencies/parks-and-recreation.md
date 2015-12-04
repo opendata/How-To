@@ -1,9 +1,4 @@
----
-layout: default
-title: Parks and Recreation
----
-
-{:toc}
+# Parks and Recreation
 
 ## Data
 

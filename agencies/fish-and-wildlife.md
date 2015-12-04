@@ -1,9 +1,4 @@
----
-layout: default
-title: Fish and Wildlife
----
-
-{:toc}
+# Fish and Wildlife
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 
@@ -22,4 +17,4 @@ title: Fish and Wildlife
 
 Domain experts who are interested in open data and who might be willing to talk to you.
 
-* [Waldo Jaquith, U.S. Open Data Institute](http://usodi.org/)
+* [Waldo Jaquith, U.S. Open Data](http://usodi.org/)

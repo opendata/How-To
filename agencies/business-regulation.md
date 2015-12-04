@@ -1,9 +1,4 @@
----
-layout: default
-title: Business Regulation
----
-
-{:toc}
+# Business Regulation
 
 These functions frequently fall within the Secretary of State’s office.
 
@@ -40,4 +35,3 @@ The sale of securities is registered with states, which publishes that informati
 Domain experts who are interested in open data and who might be willing to talk to you.
 
 * Chris Taggart, [OpenCorporates](https://opencorporates.com/)
-

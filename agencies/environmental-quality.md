@@ -1,9 +1,4 @@
----
-layout: default
-title: Environmental Quality Agencies
----
-
-{:toc}
+# Environmental Quality Agencies
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 

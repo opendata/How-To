@@ -1,13 +1,8 @@
----
-layout: default
-title: Councils of Governments
----
-
-{:toc}
-
-(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
+# Councils of Governments
 
 (aka "planning districts," aka "regional councils")
+
+(Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 
 ## Data
 

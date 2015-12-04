@@ -1,9 +1,4 @@
----
-layout: default
-title: Taxation and Revenue Agencies
----
-
-{:toc}
+# Taxation and Revenue Agencies
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 

@@ -1,9 +1,4 @@
----
-layout: default
-title: Health and Welfare Agencies
----
-
-{:toc}
+# Health and Welfare Agencies
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 

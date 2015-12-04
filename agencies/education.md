@@ -1,9 +1,4 @@
----
-layout: default
-title: Education Agencies
----
-
-{:toc}
+# Education Agencies
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 

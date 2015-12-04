@@ -1,9 +1,4 @@
----
-layout: default
-title: Governmental General Services Agencies
----
-
-{:toc}
+# Governmental General Services Agencies
 
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 
@@ -15,3 +10,4 @@ title: Governmental General Services Agencies
 * surplus real estate and property
 * fleet vehicles owned
 * RFPs
+* 

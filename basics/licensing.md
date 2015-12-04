@@ -1,9 +1,4 @@
----
-title: Licensing Your Data
-layout: default
----
-
-{:toc}
+# Licensing Your Data
 
 (Note: The below is just notes in outline form. It remains to flesh this out into a proper chapter.)
 

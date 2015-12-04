@@ -1,7 +1,4 @@
----
-layout: default
-title: Free and Open Source Software Alternatives to Proprietary Software
----
+# Free and Open Source Software Alternatives to Proprietary Software
 
 | Proprietary Tool(s)    | FOSS Tool(s)   | Area        |
 |------------------------|----------------|-------------|
@@ -12,5 +9,5 @@ title: Free and Open Source Software Alternatives to Proprietary Software
 | ArcGIS                 | QGIS           | GIS         |
 | MS Outlook/Apple Mail  | Thunderbird    | Email       |
 | Audio editing software | Audacity       | Audio       |
-| Instant Messaging      | Adium ; Pidgin | IM          |
+| Instant Messaging      | Adium; Pidgin  | IM          |
 | Dropbox                | Owncloud       | Doc sharing |

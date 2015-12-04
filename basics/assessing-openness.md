@@ -1,9 +1,4 @@
----
-title: Assessing Openness
-layout: default
----
-
-{:toc}
+# Assessing Openness
 
 (Note: The below is just notes in outline form. It remains to flesh this out into a proper chapter.)
 
