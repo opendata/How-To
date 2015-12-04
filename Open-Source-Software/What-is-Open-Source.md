@@ -1,6 +1,4 @@
-# What is Free and Open Source Software?
-
-## Definition
+# Definition
 
 Free and Open Source Software (or FOSS) is software that is licensed under one of several accepted free software[1] or open source licenses[2] that:
 * do not restrict your ability to run the software, for any purpose,

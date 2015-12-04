@@ -1,5 +1,3 @@
-# Free and Open Source Software Alternatives to Proprietary Software
-
 | Proprietary Tool(s)    | FOSS Tool(s)   | Area        |
 |------------------------|----------------|-------------|
 | Adobe Acrobat Pro      | Tesseract      | OCR         |

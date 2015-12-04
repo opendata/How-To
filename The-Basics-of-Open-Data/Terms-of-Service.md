@@ -1,5 +1,3 @@
-# Terms of Service
-
 (Note: The below is just notes in outline form. It remains to flesh this out into a proper chapter.)
 
 * there is no need to have terms of service for provided data—it accomplishes nothing

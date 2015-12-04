@@ -1,8 +1,6 @@
-# Transportation Administration Agencies
-
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 
-## Data
+# Data
 
 * asset locations (road geometries, sidewalks, bike lanes, roadway signage, bridges)
 * asset conditions (pavement conditions/inspections, bridge conditions/inspections, surface conditions, weather, air quality)

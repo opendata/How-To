@@ -1,8 +1,6 @@
-# Geospatial Agencies
-
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 
-## Data
+# Data
 
 * parcel maps
 * addresses points (often as an E-911 database)
@@ -12,14 +10,14 @@
 * public school districts
 * orthophotographs
 
-## Open Data Communities
+# Open Data Communities
 
 Who wants this data.
 
 * [OpenAddresses](http://openaddresses.io/)
 * [OpenStreetMap](http://openstreetmap.us/)
 
-## Experts
+# Experts
 
 Domain experts who are interested in open data and who might be willing to talk to you.
 

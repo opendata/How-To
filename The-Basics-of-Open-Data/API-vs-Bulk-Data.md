@@ -1,12 +1,10 @@
-# API Versus Bulk Data
-
-## Introduction
+# Introduction
 
 There are two primary methods of publishing open data—as bulk data or with an Application Programming Interface (API). There are benefits and drawbacks to both, and each is better suited to different scenarios.
 
 As a general rule, you’ll want to publish bulk data, not an API.
 
-## APIs
+# APIs
 
 Think of an Application Programming Interface as software that communicates via the web. Here’s a request to the National Weather Service's API for the weather forecast for Washington DC ("WASD2"):
 
@@ -63,13 +61,13 @@ This is Extensible Markup Language (XML)—readable by both software and humans.
 
 This API request is exactly the same as typing in a website address and getting a webpage in response, only instead of getting a pretty-looking page, you get data that’s designed to be read by software. (Cleverly, the National Weather Service does both. If you [go to that API address now](http://w1.weather.gov/xml/current_obs/WASD2.xml), you’ll get a nice-looking web page. But if you view the source, you’ll see it’s created by the XML.)
 
-### Pros
+## Pros
 
 * For data that changes frequently, even constantly, APIs don’t require constant resynchronization.
 * For datasets that are impractically large, or merely large but that most people only need a tiny portion of, APIs don’t require transferring and parsing large amounts of data.
 
 
-### Cons
+## Cons
 
 * APIs are only useful to programmers.
 * There are scenarios in which it’s important to be able to analyze an entire dataset, and fragmenting it behind an API can make that very difficult.
@@ -77,23 +75,23 @@ This API request is exactly the same as typing in a website address and getting 
 * In the case of a temporary government shutdown, if servers are shut down, data within an API is totally inaccessible, making useless any software that depends on it.
 
 
-## Bulk Data
+# Bulk Data
 
 "Bulk data" is really just a fancy way of saying "files." These might be JSON, XML, CSV, or any of dozens of other file formats. Considering the above example of weather data, imagine if instead of making one request and getting one forecast, if the request was instead for `http://w1.weather.gov/xml/current_obs.xml`, and the server responded with  XML file providing the current weather for every weather station in the United States. That's bulk data.
 
-### Pros
+## Pros
 
 * Common file formats—especially CSV—can be used by almost anybody, rather than just programmers.
 * It’s easy to produce, in comparison to an API. Often data is already stored in a format useful to the public, and if it’s not, it generally can be automaticallted converted into such a format.
 * It’s trivial to host and distribute, because it’s just files.
 * In the case of a government shutdown, if servers are shut down, bulk data is easily mirrored. Properly written client software will continue to function just fine, using the locally cached copy of the file.
 
-### Cons
+## Cons
 
 * For data that changes frequently, even constantly, bulk data can be impractical, because clients may have to download updated files constantly.
 * For datasets that are impractically large, or merely large but that most people only need a tiny portion of, bulk data can be an obstacle, because of the resources required to transfer and parse it.
 
-## Hybrid Model
+# Hybrid Model
 
 There is a hybrid model that lives between an API and the bulk data model.
 

@@ -1,8 +1,6 @@
-# Executive Branch
-
 (Note: Below are notes in outline form. It remains to flesh this out into a proper section.)
 
-## Data
+# Data
 
 * every agency and that agency's website URL
 * the org chart, including all agencies, divisions, and employees
