@@ -6,7 +6,7 @@ repo_url: https://github.com/opendata/How-To/
 docs_dir: .
 
 pages:
-- Home: README.md
+- Home: index.md
 - The Basics of Open Data:
   - Introduction: The-Basics-of-Open-Data/index.md
   - Why Publish Open Data?: The-Basics-of-Open-Data/Why-Open-Data.md
