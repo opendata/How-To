@@ -82,7 +82,7 @@ This API request is exactly the same as typing in a website address and getting 
 ## Pros
 
 * Common file formats—especially CSV—can be used by almost anybody, rather than just programmers.
-* It’s easy to produce, in comparison to an API. Often data is already stored in a format useful to the public, and if it’s not, it generally can be automaticallted converted into such a format.
+* It’s easy to produce, in comparison to an API. Often data is already stored in a format useful to the public, and if it’s not, it generally can be automatically converted into such a format.
 * It’s trivial to host and distribute, because it’s just files.
 * In the case of a government shutdown, if servers are shut down, bulk data is easily mirrored. Properly written client software will continue to function just fine, using the locally cached copy of the file.
 
