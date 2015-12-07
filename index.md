@@ -7,3 +7,7 @@ This is a practical guide to opening data, for government employees whose job it
 # Status
 
 This is a book in the process of being written, in some areas skeletal in its contents. See [Issues](https://github.com/opendata/How-To/issues) to see what needs to be done and to lend a hand.
+
+# License
+
+Published under [the Creative Commons Zero 1.0 Universal license](https://github.com/opendata/How-To/blob/master/LICENSE).
