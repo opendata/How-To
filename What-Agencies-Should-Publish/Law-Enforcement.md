@@ -5,3 +5,4 @@
 * incidents of crime
 * precinct boundaries
 * use of force by officers
+* http://www.cops.usdoj.gov/pdf/taskforce/TaskForce_FinalReport.pdf#page=45
