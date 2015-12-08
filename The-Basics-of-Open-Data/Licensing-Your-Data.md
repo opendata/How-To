@@ -10,4 +10,5 @@ To determine what copyright regime exists for your government, start by looking 
 
 If you are in a position to do so, you should release data under a [Creative Commons Zero (CC0) license](https://creativecommons.org/about/cc0), which waives copyright. This is arguably better than dedicating work to the public domain, because “public domain” is a concept that exists under U.S. law, but not internationally. CC0 allows anybody anywhere in the world to use your data, while public domain is basically limited to the U.S.
 
+# Further Reading
 For more information, read _Open Government Data_’s “[Best-Practices Language for Making Data ‘License-Free’](http://theunitedstates.io/licensing/).”
