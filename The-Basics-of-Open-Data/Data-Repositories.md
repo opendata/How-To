@@ -6,7 +6,7 @@ Some repository software will automatically convert data from one format to othe
 
 Some software will visualize datasets right in the browser, letting people map, sort, search, and combine datasets, without requiring any knowledge of how to program.
 
-And some repository software allows syndicatation, permitting other organizations to automatically incorporate your own data (e.g., a state transportation agency could gather up all localities' transportation data and republish it).
+And some repository software allows syndication, permitting other organizations to automatically incorporate your own data (e.g., a state transportation agency could gather up all localities' transportation data and republish it).
 
 Generally, repository software supports either uploading files to be stored in the repository, or pointing the repository at an existing website address where the file lives. The former works well for smaller governments (localities, small agencies), while the latter works well for larger governments, for which centralizing assets can be impractical.
 
@@ -43,6 +43,7 @@ For most governments, commercial hosting is going to be the most viable options.
 * clients include
   * [Minneapolis, MN](http://opendata.minneapolismn.gov/)
   * [Charlotte, NC](http://clt.charlotte.opendata.arcgis.com/)
+  * [Washington, DC](http://data.dc.gov/)
 
 ## Junar
 
