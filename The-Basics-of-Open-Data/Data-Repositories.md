@@ -38,8 +38,8 @@ For most governments, commercial hosting is going to be the most viable options.
 
 ## ArcGIS Open Data
 * https://opendata.arcgis.com/about
-* the newest entrant, it just got underway in late 2014
-* it’s best at geodata right now, but ArcGIS’s scope is broader than that
+* the newest entrant, having gotten underway in late 2014
+* although initially best with geodata, it has improved substantially, and 
 * clients include
   * [Minneapolis, MN](http://opendata.minneapolismn.gov/)
   * [Charlotte, NC](http://clt.charlotte.opendata.arcgis.com/)
