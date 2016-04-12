@@ -23,6 +23,7 @@ An at-a-glance list of available data repositories.
 | DataHub           | free, hosted  | CKAN-powered |
 | DKAN              | open source   |              |
 | GitHub            | free, hosted  |              |
+| JKAN              | open source   |              |
 | Junar             | hosted        |              |
 | NuData            | hosted        |              |
 | OpenData.city     | free & hosted | CKAN-powered |
@@ -37,58 +38,33 @@ Details on each follow.
 For most governments, commercial hosting is going to be the most viable options. Paying somebody to host your own data requires little to no technical knowledge on the part of your government, and they’ll hold your hand through the process. Your organization won't have to provide any technical infrastructure (e.g., servers) or know how to program.
 
 ## ArcGIS Open Data
-* https://opendata.arcgis.com/about
-* the newest entrant, having gotten underway in late 2014
-* although initially best with geodata, it has improved substantially, and 
-* clients include
-  * [Minneapolis, MN](http://opendata.minneapolismn.gov/)
-  * [Charlotte, NC](http://clt.charlotte.opendata.arcgis.com/)
-  * [Washington, DC](http://data.dc.gov/)
+[ArcGIS Open Data](https://opendata.arcgis.com/about) is a new entrant in the field, having been released in late 2014. After a rocky roll-out, in which the company showed that its strengths still lay primarily in working with geodata, the platform has improved markedly since. ArcGIS Open Data is included with an ArcGIS Online contract—because of the universality of that service among municipalities and states, it’s effectively free for those existing customers. This makes it a very attractive option for governments with low levels of buy-in to an open data program, because it eliminates the cost of a data catalog. ArcGIS Open Data is only available as hosted software—it is not possible to run an instance of it on your own servers.
+
+Clients include [Minneapolis, MN](http://opendata.minneapolismn.gov/), [Charlotte, NC](http://clt.charlotte.opendata.arcgis.com/), and [Washington, DC](http://data.dc.gov/).
 
 ## Junar
 
-* http://www.junar.com/
-* less expensive than Socrata
-* clients include
-  * [Sacramento, CA](http://data.cityofsacramento.org/)
-  * [Palo Alto, CA](http://paloalto.opendata.junar.com/)
-  * [Lima, Perú](http://lima.datosabiertos.pe/)
+[Junar](http://www.junar.com/) is quite unlike other open data repository options. It is unlike other repositories, with an interesting feature set and a focus on data collection and analysis. Junar is uniquely bilingual, supporting English and Spanish audiences seamlessly. Their pricing is targeted at small- to medium-sized cities, starting around $10,000. Their clients include [Sacramento, CA](http://data.cityofsacramento.org/), [Palo Alto, CA](http://paloalto.opendata.junar.com/), and [Lima, Perú](http://lima.datosabiertos.pe/).
 
-## NuData
+Junar’s demo site is available [upon request](http://junar.com/solicitar-demo/).
 
-* http://nucivic.com/products/
-* less expensive than Socrata
-* based on DKAN
+## NuCivic Data
 
-## OpenData.city
+[NuCivic Data](http://www.nucivic.com/solutions/) is based on DKAN, which was created and is maintained by nücivic. They’re a mid-range provider, in terms of pricing—their rates are much lower than socrata, but more expensive than, for example, Junar.
 
-* http://www.opendata.city/
-* Ontodia
-* free tier (<=20 datasets)
-* less expensive than Socrata
-* for up to 100 datasets and 100GB, $499/month
+## CivicDashboards
+
+Open data consulting firm [Ontodia](http://www.ontodia.com/) provides hosted CKAN under the [CivicDashboards](http://www.civicdashboards.com/) banner. They offer a free tier, for storing a small number of datasets. Their pricing is comparable with Junar’s.
 
 ## OpenDataSoft
 
-* http://www.opendatasoft.com/
-* free tier (<=20 datasets)
-* clients include
-  *  [Paris, France](http://opendata.paris.fr/)
-  *  [Corsica, France](http://opendata.corse.fr/)
-  *  [French Minister of the Interior](http://www.interieur.gouv.fr/)
-  *  [Société Nationale des Chemins de Fer Français](https://data.sncf.com/)
+[OpenDataSoft](http://www.opendatasoft.com/) is a French company that has moved into the U.S. market recently. They offer a free tier (up to 5 datasets, each of up to 20,000 records). Their clients include [Durham, North Carolina](https://opendurham.nc.gov/), [Paris, France](http://opendata.paris.fr/) [Corsica, France](http://opendata.corse.fr/), the [French Minister of the Interior](http://www.interieur.gouv.fr/), and [Société Nationale des Chemins de Fer Français](https://data.sncf.com/).
 
-## Socrata Open Data Portal
+## Socrata Open Data
 
-* http://www.socrata.com/products/open-data-portal/
-* the major vendor of open data repositories
-* most expensive option
-* clients include
-  * [San Francisco, CA](https://data.sfgov.org/)
-  * [New York, NY](https://data.cityofnewyork.us/)
-  * [Medicare](https://data.medicare.gov/)
-  * [Maryland](https://data.maryland.gov/)
-* [demo site](https://sandbox.demo.socrata.com/)
+[Socrata](https://www.socrata.com/) is the major vendor in the open data repository space, with their [Socrata Open Data platform](http://www.socrata.com/products/open-data/). Socrata only offers hosted options—there is no way to run Socrata’s software on your own servers. It is both the most feature-rich and the most expensive option, with plans running hundreds of thousands of dollars a year. Their clients include many states and cities throughout the U.S., such as [San Francisco, CA](https://data.sfgov.org/), [New York, NY](https://data.cityofnewyork.us/), [Medicare](https://data.medicare.gov/), and [Maryland](https://data.maryland.gov/).
+
+[A Socrata demo site is available](https://sandbox.demo.socrata.com/).
 
 
 # Open Source Software
@@ -97,37 +73,31 @@ There are some excellent open source data repository programs that are solid opt
 
 ## CKAN
 
-"CKAN" is nominally an initialism for "Comprehensive Knowledge Archive Network," but it’s only ever referred to as “CKAN.” A creation of the UK-based Open Knowledge Foundation, CKAN is the most commonly used open source data repository software.
+"CKAN" is nominally an initialism for "Comprehensive Knowledge Archive Network," but it’s only ever referred to as “CKAN.” A creation of the UK-based [Open Knowledge](https://okfn.org/), CKAN is the most commonly used open source data repository software. It’s written in Python, and is the standard-bearer for repository software. Lamentably, it is also known for being difficult to install, although [Docker images](https://hub.docker.com/u/ckan/) and [Amazon Web Service’s Amazon Machine Images](https://aws.amazon.com/marketplace/pp/B00JEF0278) have simplified this substantially.
 
-* users include...
-* consultants include...
-  * http://www.ontodia.com/solutions/data-publishing/
-* paid hosts include...
-  * http://ckanexpress.com/
-  * http://opendata.city/
-* example site
+Users of CKAN include [Data.gov](https://www.data.gov/), [Denver, Colorado](http://data.denvergov.org/), and [the National Oceanic and Atmospheric Administration](https://data.noaa.gov/dataset), among [many others](http://ckan.org/instances/).
+
+CKAN consultants include [Open Knowledge](http://services.okfn.org/ckan/), [Ontodia](http://www.ontodia.com/solutions/data-publishing/), and [Accela](https://www.accela.com/), in addition to many independent consultants. Paid CKAN hosts include [Open Knowledge](http://services.okfn.org/hosting/) and [Ontodia](http://www.civicdashboards.com/).
+
+[A CKAN demo site is available](http://demo.ckan.org/).
 
 ## DKAN
 
-DKAN is a clone of CKAN, rewritten as a Drupal module. For an organization that uses the Drupal content management system and also wants a data repository, DKAN is an especially good option.
+[DKAN](http://nucivic.com/dkan/) is a clone of CKAN, although it shares no code with CKAN—it’s been rewritten in PHP, as a Drupal module. For an organization that uses the Drupal content management system and also wants a data repository, DKAN is an especially good option.
 
-* http://nucivic.com/dkan/, https://www.drupal.org/project/dkan
-* users include...
-* consultants include...
-* paid hosts include...
-  * [NuCivic Data](http://nucivic.com/data/enterprise/)
-* demo site
-  * http://demo.getdkan.com/
+Users of DKAN include [the U.S. Department of Health & Human Services](http://www.healthdata.gov/), [the U.S. Department of Agriculture](https://data.nal.usda.gov/), [Oklahoma](http://data.ok.gov/), among [others](https://github.com/NuCivic/dkan-sites).
 
-## Open Data Catalog
+DKAN creator and maintainer [nücivic](http://www.nucivic.com/) is the primary consultant and paid host for DKAN.
 
-This was written for Philadelphia by Azavea. It is not as widely used as the other open source options, but it is full-featured and robust.
+[A DKAN demo site is available](http://demo.getdkan.com/).
 
-* https://github.com/azavea/Open-Data-Catalog
-* users include...
-  * [Philadelphia](http://www.opendataphilly.org/)
-* consultants include...
-  * Azavea
+## JKAN
+
+[JKAN](https://jkan.io/) is nominally based on CKAN, although it shares no code with it. [JKAN was created by Tim Wisniewski](https://usopendata.org/2016/03/28/jkan/), Philadelphia’s Chief Data Officer, as a data catalog powered by [Jekyll](https://jekyllrb.com/). The use Jekyll makes it trivial to host, because Jekyll produces a website that consists entirely of static files. Note that JKAN is a data _catalog,_ not a _repository,_ which is to say that it stores links to data and metadata about that data, but not the data itself. The data could be hosted on an FTP server, in-place on agency websites, in Amazon S3, in Dropbox, or anywhere else one might store a file for public access. Setting up a site takes just a few minutes.
+
+The only users of JKAN right now are hobbyists, but this is likely to change soon, given the enthusiasm with which it has been received. There are no consultants or paid hosts for JKAN.
+
+[A JKAN demo site is available](https://demo.jkan.io/).
 
 # Free Hosting
 
@@ -139,11 +109,11 @@ The Open Knowledge Foundation provides [DataHub](http://datahub.io/), a free, CK
 
 ## GitHub
 
-* http://github.com/
-* not really a data repository, but it can serve as one
-* it has none of the niceties of proper repository software (conversion of formats, retrieving data from remote URLs, etc.), but it does offer previews of some types of data, publicly track changes, and it’s a reasonable place to store datasets
-* it does offer one significant advantage, which is that GitHub—unlike any other repository software—provides a mechanism for people to propose changes to your datasets, which you can accept or decline, if they spot mistakes or areas for enhancement
+[GitHub](https://www.github.com/) isn’t really _meant_ as a data repository, but it can serve as one. It has none of the niceties of proper repository software (conversion of formats, retrieving data from remote URLs, etc.), but it does offer previews of some types of data, publicly tracks changes, and it’s a reasonable place to store datasets.
 
-## OpenData.city
+It does offer one significant advantage, which is that GitHub—unlike any other repository software—provides a mechanism for people to propose changes to your datasets, which you can accept or decline, if they spot mistakes or areas for enhancement.
 
-A commercial host run by Ontodia, they provide [a free tier](http://www.opendata.city/pricing/) that includes 10GB of data storage, 20 datasets, and a custom subdomain (e.g., `http://springfield.opendata.city/`). It's CKAN-based.
+## JKAN on GitHub
+
+[JKAN](#jkan) is designed to be deployed onto GitHub, where the resulting data catalog can be hosted for free. In this way, GitHub can serve as a free host without sacrificing the niceties of a data catalog.
+
