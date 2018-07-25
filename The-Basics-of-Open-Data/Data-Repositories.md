@@ -26,7 +26,6 @@ An at-a-glance list of available data repositories.
 | JKAN              | open source   |              |
 | Junar             | hosted        |              |
 | NuData            | hosted        |              |
-| OpenData.city     | free & hosted | CKAN-powered |
 | OpenDataSoft      | hosted        |              |
 | Open Data Catalog | open source   |              |
 | Socrata           | hosted        |              |
