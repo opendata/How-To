@@ -34,7 +34,7 @@ intersphinx_disabled_domains = ["std"]
 
 templates_path = ["_templates"]
 
-master_doc = 'index'
+master_doc = 'index.md'
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
