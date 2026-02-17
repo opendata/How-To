@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'How to Open Data'
-copyright = '2023, Waldo Jaquith'
+copyright = '2026, Waldo Jaquith'
 author = 'Waldo Jaquith'
 
 # -- General configuration ---------------------------------------------------
@@ -17,8 +17,10 @@ extensions = ['myst_parser']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
