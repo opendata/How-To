@@ -10,7 +10,7 @@ This is a book in the process of being written, in some areas skeletal in its co
 Published under `the Creative Commons Zero 1.0 Universal license <https://github.com/opendata/How-To/blob/master/LICENSE>`_.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    The-Basics-of-Open-Data/index
    What-Agencies-Should-Publish/index
