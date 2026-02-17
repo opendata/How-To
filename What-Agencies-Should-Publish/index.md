@@ -4,7 +4,7 @@ The most important data for agencies to publish is the data that they know to be
 
 Note that [there are core datasets that state and local governments should prioritize publishing](Core-Datasets.md)—these are the datasets that make it possible to connect other datasets together, to navigate the collective data structure of government.
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 Core-Datasets
 All-Agencies
