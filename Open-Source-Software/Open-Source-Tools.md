@@ -1,3 +1,5 @@
+# Open Source Tools
+
 | Proprietary Tool(s)    | FOSS Tool(s)   | Area        |
 |------------------------|----------------|-------------|
 | Adobe Acrobat Pro      | Tesseract      | OCR         |
