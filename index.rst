@@ -10,7 +10,7 @@ This is a book in the process of being written, in some areas skeletal in its co
 Published under `the Creative Commons Zero 1.0 Universal license <https://github.com/opendata/How-To/blob/master/LICENSE>`_.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: The Basics of Open Data
 
    The-Basics-of-Open-Data/Why-Open-Data
@@ -25,7 +25,7 @@ Published under `the Creative Commons Zero 1.0 Universal license <https://github
    The-Basics-of-Open-Data/Terms-of-Service
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: What Agencies Should Publish
 
    What-Agencies-Should-Publish/Core-Datasets
@@ -53,7 +53,7 @@ Published under `the Creative Commons Zero 1.0 Universal license <https://github
    What-Agencies-Should-Publish/Treasury
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Open Source Software
 
    Open-Source-Software/What-is-Open-Source
