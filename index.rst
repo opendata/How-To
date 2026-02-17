@@ -10,6 +10,11 @@ Welcome to How to Open Data's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   The-Basics-of-Open-Data/index
+   What-Agencies-Should-Publish/index
+   Open-Source-Software/What-is-Open-Source
+   Open-Source-Software/Open-Source-Tools
+   Further-Reading
 
 
 Indices and tables
