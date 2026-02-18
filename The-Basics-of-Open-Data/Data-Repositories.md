@@ -94,7 +94,7 @@ DKAN creator and maintainer [nücivic](http://www.nucivic.com/) is the primary c
 
 ### JKAN
 
-[JKAN](https://jkan.io/) is nominally based on CKAN, although it shares no code with it. [JKAN was created by Tim Wisniewski](https://usopendata.org/2016/03/28/jkan/), Philadelphia’s Chief Data Officer, as a data catalog powered by [Jekyll](https://jekyllrb.com/). The use Jekyll makes it trivial to host, because Jekyll produces a website that consists entirely of static files. Note that JKAN is a data _catalog,_ not a _repository,_ which is to say that it stores links to data and metadata about that data, but not the data itself. The data could be hosted on an FTP server, in-place on agency websites, in Amazon S3, in Dropbox, or anywhere else one might store a file for public access. Setting up a site takes just a few minutes.
+[JKAN](https://jkan.io/) is nominally based on CKAN, although it shares no code with it. [JKAN was created by Tim Wisniewski](https://usopendata-archive.org/2016/03/28/jkan/), Philadelphia’s Chief Data Officer, as a data catalog powered by [Jekyll](https://jekyllrb.com/). The use Jekyll makes it trivial to host, because Jekyll produces a website that consists entirely of static files. Note that JKAN is a data _catalog,_ not a _repository,_ which is to say that it stores links to data and metadata about that data, but not the data itself. The data could be hosted on an FTP server, in-place on agency websites, in Amazon S3, in Dropbox, or anywhere else one might store a file for public access. Setting up a site takes just a few minutes.
 
 The only users of JKAN right now are hobbyists, but this is likely to change soon, given the enthusiasm with which it has been received. There are no consultants or paid hosts for JKAN.
 

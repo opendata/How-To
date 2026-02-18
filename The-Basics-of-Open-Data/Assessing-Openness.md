@@ -20,4 +20,4 @@ Now publish your openly-licensed Excel file in an open format (e.g., [CSV](https
 
 ## A Little Open is OK
 
-If you have important data that is only currently available in non-open formats (e.g., Excel) or even non-_structured_ data (e.g., PDFs, Word), then go ahead and publish it in that format! [It is far better to publish not-very-open data than to not publish data at all](https://usopendata.org/2014/05/23/municipal-data/).
+If you have important data that is only currently available in non-open formats (e.g., Excel) or even non-_structured_ data (e.g., PDFs, Word), then go ahead and publish it in that format! [It is far better to publish not-very-open data than to not publish data at all](https://usopendata-archive.org/2014/05/23/municipal-data/).

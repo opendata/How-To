@@ -17,4 +17,4 @@
 
 Domain experts who are interested in open data and who might be willing to talk to you.
 
-* [Waldo Jaquith, U.S. Open Data](https://usopendata.org/)
+* [Waldo Jaquith, U.S. Open Data](https://usopendata-archive.org/)
