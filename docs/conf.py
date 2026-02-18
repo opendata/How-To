@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "How to Open Data"
-copyright = "2023, Waldo Jaquith"
+copyright = "2026, Waldo Jaquith"
 author = "Waldo Jaquith"
 
 
